@@ -31,6 +31,11 @@ Primary use:
   src: url('../fonts/Poppins/Poppins-Black.ttf'); 
 }
 
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf'); 
+}
+
 
 
 
