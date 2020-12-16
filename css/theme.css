@@ -1,0 +1,21 @@
+.theme-list-heading{
+    font-family: 'Poppins Black' !important;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.theme-list-para{
+    font-size: 1.5rem;
+}
+
+.theme-list{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.theme-list-column{
+    background: linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    text-align: center;
+}
