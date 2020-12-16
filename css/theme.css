@@ -6,16 +6,20 @@
 }
 
 .theme-list-para{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .theme-list{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
 .theme-list-column{
-    background: linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    padding: 4rem;
+    min-width: 75%;
+    background: #122544;
     text-align: center;
+    border-radius: 30px;
 }
+
