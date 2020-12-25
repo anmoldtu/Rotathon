@@ -11,19 +11,17 @@
     text-align: center;
 }
 
-
-.card-title{
+.card-title {
     margin-bottom: 0px;
 }
 
-
-.card-text{
+.card-text {
     margin-top: 0px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
-
-.medal-icon{
+.medal-icon {
     font-size: 150px;
     color: gold;
 }
@@ -33,12 +31,11 @@
         color: whitesmoke;
         font-weight: bold;
     }
-
-    .medal-icon{
+    .medal-icon {
         font-size: 100px;
         color: gold;
+        /* color: rgb(236, 135, 215); */
     }
-
 }
 
 
@@ -49,13 +46,10 @@
         color: whitesmoke;
         font-weight: bold;
     }
-
-    .medal-icon{
+    .medal-icon {
         font-size: 100px;
         color: gold;
     }
-
-
 }
 
 
