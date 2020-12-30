@@ -1,14 +1,14 @@
 .wholecon{
     background:#f2f4f8;
-    width:900px;
+    width:100vw;
     margin:auto;
   }
   .cardCon {
     background: #02021d;
-    width:900px;
+    width:100vw;
     margin:auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     font-family: "Open Sans";
@@ -17,7 +17,7 @@
   
   
   .credentialing {
-    --bg-color: #B8F9D3;
+    --bg-color: #03A9F4;
     --bg-color-light: #e2fced;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(184, 249, 211, 0.48);
@@ -38,6 +38,7 @@
   }
   
   .card {
+    margin: 4rem;
     width: 250px;
     height: 321px;
     background: #fff;
@@ -54,8 +55,8 @@
   }
   
   .card:hover {
-    transform: translateY(-5px) scale(1.005) translateZ(0);
-    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    transform: translateY(-5px) scale(1) translateZ(0);
+    box-shadow: 0 24px 36px rgba(75, 59, 59, 0.11),
       0 24px 46px var(--box-shadow-color);
   }
   
@@ -66,6 +67,7 @@
   .card:hover .circle {
     border-color: var(--bg-color-light);
     background: var(--bg-color);
+    border: none;
   }
   
   .card:hover .circle:after {
@@ -127,8 +129,29 @@
     height: 118px;
     border-radius: 50%;
     background: var(--bg-color);
-    top: 60px;
-    left: 60px;
+    top: 54px;
+    left: 65px;
     z-index: 0;
     transition: transform 0.3s ease-out;
+  }
+
+  .cardBg{
+    background-image: url(../images/code1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cardBg2{
+    background-image: url(../images/code3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cardBg3{
+    background-image: url(../images/code4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
