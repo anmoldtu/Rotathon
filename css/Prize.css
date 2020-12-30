@@ -17,7 +17,7 @@
   
   
   .credentialing {
-    --bg-color: #03A9F4;
+    --bg-color: #85de90;
     --bg-color-light: #e2fced;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(184, 249, 211, 0.48);
@@ -154,4 +154,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .wallet + div {
+      background:#6c598a ;
   }
