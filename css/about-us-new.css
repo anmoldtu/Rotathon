@@ -42,7 +42,11 @@
 	}
 
 	.hero-full-container p{
-	    font-size: 13px;
+	    font-size: 15px;
+	}
+
+	.sec-head{
+		font-size: 40px !important;
 	}
 }
 
