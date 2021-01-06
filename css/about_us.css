@@ -1,0 +1,10 @@
+.image-responsive img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.image-responsive img:hover {
+    -webkit-filter: grayscale(0);
+    filter: hue-rotate(1);
+}
