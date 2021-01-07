@@ -894,7 +894,7 @@ Main Components
     }
 }
 
-.image-responsive img {
+/*.image-responsive img {
     filter: gray;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -903,4 +903,4 @@ Main Components
 .image-responsive img:hover {
     -webkit-filter: grayscale(0);
     filter: hue-rotate(1);
-}
+}*/
