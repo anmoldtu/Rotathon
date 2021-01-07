@@ -63,6 +63,10 @@
   .card:hover .overlay {
     transform: scale(4) translateZ(0);
   }
+
+  .card:hover .overlay-9 {
+    opacity: 1;
+  }
   
   .card:hover .circle {
     border-color: var(--bg-color-light);
@@ -156,6 +160,10 @@
     background-position: center;
   }
 
-  .wallet + div {
+  /* .wallet + div {
       background:#6c598a ;
+  } */
+
+  .overlay-9{
+    opacity: 0;
   }
