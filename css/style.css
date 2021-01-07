@@ -6486,3 +6486,7 @@ section:hover .small-item-carousel .owl-next{
 	height: auto;
 }
 
+#grad {
+    background-image: linear-gradient(180deg, rgb(208, 243, 253), rgb(255, 210, 233));
+}
+
