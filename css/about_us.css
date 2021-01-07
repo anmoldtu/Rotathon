@@ -1,4 +1,4 @@
-.image-responsive img {
+/* .image-responsive img {
     filter: gray;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -7,4 +7,17 @@
 .image-responsive img:hover {
     -webkit-filter: grayscale(0);
     filter: hue-rotate(1);
+} */
+
+.email_class {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.email_class a:hover {
+    color: gold !important;
+}
+
+#grad {
+    background-image: linear-gradient(180deg, rgb(208, 243, 253), rgb(255, 210, 233));
 }
