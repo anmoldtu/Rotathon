@@ -23,5 +23,25 @@
 }
 
 #darkcolorsgrad {
-    background-image: linear-gradient(90deg, rgb(0, 19, 41), rgb(1, 36, 53), rgb(40, 0, 48))!important;
+    background-image: linear-gradient(90deg, rgb(0, 19, 41), rgb(1, 36, 53), rgb(22, 0, 48))!important;
+}
+
+#verticalgrad {
+    /* #02021d */
+    background-image: linear-gradient(#000000, rgb(0, 19, 41))!important;
+}
+
+#verticalgrad2 {
+    /* #02021d */
+    background-image: linear-gradient( rgb(0, 19, 41), rgb(1, 36, 53))!important;
+}
+
+#verticalgrad3 {
+    /* rgb(1, 36, 53), rgb(40, 0, 48) */
+    background-image: linear-gradient(rgb(1, 36, 53), rgb(1, 24, 36))!important;
+}
+
+#verticalgrad4 {
+    /* rgb(1, 36, 53), rgb(40, 0, 48) */
+    background-image: linear-gradient(rgb(1, 36, 53), rgb(40, 0, 48))!important;
 }
