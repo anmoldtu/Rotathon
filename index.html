@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ROTATHON</title>
+    <title>Rotathon</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta charset="utf-8">
@@ -203,6 +203,26 @@
         .main-timeline .timeline:nth-child(4n+5) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+5) .timeline-icon:after {
             background: #619310;
+        }
+
+        .main-timeline .timeline:nth-child(4n+6) .timeline-icon,
+        .main-timeline .timeline:nth-child(4n+6) .title {
+            color: #8A2BE2;
+        }
+        
+        .main-timeline .timeline:nth-child(4n+6) .timeline-icon:before,
+        .main-timeline .timeline:nth-child(4n+6) .timeline-icon:after {
+            background: #8A2BE2;
+        }
+
+        .main-timeline .timeline:nth-child(4n+7) .timeline-icon,
+        .main-timeline .timeline:nth-child(4n+7) .title {
+            color: #FFB400;
+        }
+        
+        .main-timeline .timeline:nth-child(4n+7) .timeline-icon:before,
+        .main-timeline .timeline:nth-child(4n+7) .timeline-icon:after {
+            background: #FFB400;
         }
         
         @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -515,7 +535,7 @@
                 <!-- Main Menu -->
                 <div class="inner-nav desktop-nav pb-0">
                     <ul class="clearlist local-scroll">
-                        <li><a class="active" href="index.html#" style="color: white">Home</a></li>
+                        <li><a class="active" href="#top" style="color: white">Home</a></li>
                         <li>
                             <a href="#" class="mn-has-sub" style="color: white">Event<i class="fa fa-angle-down"></i></a>
 
@@ -525,18 +545,18 @@
                                 <li>
                                     <a href="Theme.html">THEME</a>
                                 </li>
-                                <li>
+         <!--                        <li>
                                     <a href="#">SPEAKERS</a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="#">TEAM</a>
                                 </li>
-                                <li>
+       <!--                          <li>
                                     <a href="#">COMMITTEES</a>
                                 </li>
                                 <li>
                                     <a href="#">PARTNERS</a>
-                                </li>
+                                </li> -->
 
 
                             </ul>
@@ -599,7 +619,7 @@
                         <!-- End Item With Sub -->
 
                         <li style="color: white">
-                            <a href="#" style="color: white"><i class="fa fa-user" ></i> Login/Register</a>
+                            <a class="local-scroll" href="#sponsor" style="color: white">Become a Sponsor</a>
                         </li>
 
                 </div>
@@ -685,7 +705,7 @@
         <!--END-->
 
         <!-- Sponsor and mentor section -->
-        <section class="wave-margin" style="background-image:url(tmp-back.svg); background-size:cover;background-repeat:no-repeat;background-position:top; padding-top: 20%; background-color: black; margin-top: -8%;">
+        <section class="wave-margin" id="sponsor" style="background-image:url(tmp-back.svg); background-size:cover;background-repeat:no-repeat;background-position:top; padding-top: 20%; background-color: black; margin-top: -8%;">
             <div class="container">
                 <div class="row">
 
@@ -695,14 +715,14 @@
                     <div class="col-md-6" style=" margin-top: 2rem;">
                         <h1 class="about-join-us-head" style="font-family: 'Ubuntu','Poppins-Black'; font-size: 5rem;">Sponsor Us</h1>
                         <div>
-                            <p style="font-family: 'Poppins-Regular'; font-size: 2rem;"> Each year, our sponsors help us unite <strong>3,000+</strong> emerging developers, designers, and builders. Our sponsors make it possible for hackers to create something they're proud of. Stay tuned as we confirm more sponsors
+                            <p style="font-family: 'Poppins-Regular'; font-size: 2rem;"> Our sponsors help us unite emerging developers, designers, and builders. Our sponsors make it possible for hackers to create something they're proud of. Stay tuned as we confirm more sponsors
                                 <br>
                                 <br> Interested in sponsoring? Email us at
                                 <br>
-                                <span class="email_class" style=" font-size: 2rem;"><a href="mailto: rotathon.sponsors@gmail.com" style="font-family: 'Ubuntu'; color: #1ba0d1; font-weight: bolder; text-decoration: none;">rotathon.sponsors@gmail.com</a></span>
+                                <span class="email_class" style=" font-size: 2rem;"><a href="mailto: rotathon.sponsors@gmail.com" style="font-family: 'Ubuntu'; color: #1ba0d1; font-weight: bolder; text-decoration: none;">rotathon.event@gmail.com</a></span>
                                 <br><br>
-                                <a href="mailto: sponsors@rotathon.com" class="btn btn-mod btn-w btn-medium btn-round " style="font-weight: bold; margin-bottom: 20px;">Sponsor Us</a> &nbsp;
-                                <a href="mailto: sponsors@rotathon.com" class="btn btn-mod btn-w btn-medium btn-round " style="font-weight: bold; margin-bottom: 20px;">Become a Mentor</a>
+                                <a href="mailto: rotathon.event@gmail.com" class="btn btn-mod btn-w btn-medium btn-round " style="font-weight: bold; margin-bottom: 20px;">Sponsor Us</a> &nbsp;
+                                <a href="mailto: rotathon.event@gmail.com" class="btn btn-mod btn-w btn-medium btn-round " style="font-weight: bold; margin-bottom: 20px;">Become a Mentor</a>
                             </p>
                         </div>
                     </div>
@@ -747,7 +767,6 @@
 
         <!--   </div>
         </section> -->
-
         <section id="verticalgrad" style="background-color: #02021d; ">
             <div class="page-section" id="time-section" style="margin: auto; padding-top: 50px;">
                 <div class="main-timeline">
@@ -757,9 +776,11 @@
                             <div class="timeline-icon">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            <h3 class="title" style="color: white;">Important Dates</h3>
+                            <h3 class="title" style="color: white;">Registration Phase 1</h3>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                <span style="color: white; display: block;"><strong>January 21, 2021 to February 15, 2021</strong></span><br>
+                                In this phase, the team will be given the Problem Statements for each Track.
+                                The teams need to choose their desired track and register for Hackathon or Ideathon
                             </p>
                         </div>
                     </div>
@@ -768,9 +789,11 @@
                             <div class="timeline-icon">
                                 <i class="fa fa-rocket"></i>
                             </div>
-                            <h3 class="title" style="color: white;">Platform</h3>
+                            <h3 class="title" style="color: white;">Registration Phase 2</h3>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                <span style="color: white; display: block;"><strong>February 15, 2021 to March 3, 2021</strong></span><br>
+                                By the end of the phase, the teams need to provide a solution to the given problem statement.
+                                Each registration will be considered complete after the submission of PPTs on the shared template
                             </p>
                         </div>
                     </div>
@@ -779,39 +802,57 @@
                             <div class="timeline-icon">
                                 <i class="fa fa-user"></i>
                             </div>
-                            <h3 class="title" style="color: white;">Shortlist Release</h3>
+                            <h3 class="title" style="color: white;">Screening Round 1 </h3>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                <span style="color: white; display: block;"><strong>March 4, 2021 to March 13, 2021</strong></span><br>
+                                During this phase, mentorship sessions for all the teams will be conducted. The Top 30 Teams will be shortlisted.
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div href="#" class="timeline-content">
                             <div class="timeline-icon" style="color: #619310; ">
-                                <i class="fa fa-angle-double-right"></i>
+                                <i class="fas fa-bullhorn"></i>
+                                
                             </div>
-                            <h3 class="title" style="color: white;">Further Rounds</h3>
+                            <h3 class="title" style="color: white;">Opening Ceremony</h3>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                <span style="color: white; display: block;"><strong>March 18, 2021</strong></span><br>
+                                The Opening Ceremony will mark the opening of the final stages which will consist of the selected 30 Teams.
+                                
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div href="#" class="timeline-content">
                             <div class="timeline-icon">
-                                <i class="fa fa-trophy"></i>
+                                <i class="fa fa-angle-double-right"></i>
                             </div>
-                            <h3 class="title" style="color: white;">Finals</h3>
+                            <h3 class="title" style="color: white;">Mentorship and Training</h3>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                <span style="color: white; display: block;"><strong>March 18, 2021 to April 3, 2021</strong></span><br>
+                                The top 30 teams will receive mentorship and guidance from field experts so that they can refine their product and pitch
                             </p>
                         </div>
                     </div>
 
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-trophy"></i>
+                            </div>
+                            <h3 class="title" style="color: white;">Rotathon Grand Finale</h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>April 2021</strong></span><br>
+                                Final Screening of pitches of Hackathon and Ideathon to declare the ultimate winners of Rotathon!
+                            </p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
-
 
 
 
@@ -836,11 +877,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">NO POVERTY</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 1</strong></h1>
                                         <br><br>
-                                        <p>
-                                            End poverty in all its forms everywhere
-                                        </p>
+                                        <h1>
+                                            <strong>Financial Literacy in Rural Areas</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -861,13 +902,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">ZERO HUNGER</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 2</strong></h1>
                                         <br><br>
-                                        <p>
-                                            End hunger, achieve food security and improved nutrition, and promote sustainable agriculture
-
-
-                                        </p>
+                                        <h1>
+                                            <strong>Optimization in Agriculture</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -888,11 +927,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">GOOD HEALTH AND WELL-BEING</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 3</strong></h1>
                                         <br><br>
-                                        <p>
-                                            Ensure healthy lives and promote wellbeing for all at all ages
-                                        </p>
+                                        <h1>
+                                            <strong>Menstrual Health and Hygiene</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -913,12 +952,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal"> QUALITY EDUCATION</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 4</strong></h1>
                                         <br><br>
-                                        <p>
-                                            Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all<br>
-
-                                        </p>
+                                        <h1>
+                                            <strong>E-Learning Process</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -939,12 +977,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">GENDER EQUALITY</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 5</strong></h1>
                                         <br><br>
-                                        <p>
-                                            Achieve gender equality and empower all women and girls
-
-                                        </p>
+                                        <h1>
+                                            <strong>Climate Change</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -965,13 +1002,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">CLEAN WATER AND SANITATION</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 6</strong></h1>
                                         <br><br>
-                                        <p>
-
-                                            Ensure availability and sustainable management of water and sanitation for all
-
-                                        </p>
+                                        <h1>
+                                            <strong>LGBTQI+</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -992,12 +1027,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">AFFORDABLE AND CLEAN ENERGY</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 7</strong></h1>
                                         <br><br>
-                                        <p>
-                                            Ensure access to affordable, reliable, sustainable and modern energy for all
-
-                                        </p>
+                                        <h1>
+                                            <strong>Health Related</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -1018,13 +1052,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">DECENT WORK AND ECONOMIC GROWTH</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 8</strong></h1>
                                         <br><br>
-                                        <p>
-
-                                            Promote sustained, inclusive and sustainable economic growth, full and productive employment, and decent work for all
-
-                                        </p>
+                                        <h1>
+                                            <strong>Cyberbullying Awareness</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
@@ -1045,12 +1077,11 @@
 
                                     <div class="team-item-detail">
 
-                                        <h4 class="font-alt normal">INDUSTRY, INNOVATION AND INFRASTRUCTURE</h4>
+                                        <h1 class="font-alt normal"><strong>TRACK 9</strong></h1>
                                         <br><br>
-                                        <p>
-                                            Build resilient infrastructure, promote inclusive and sustainable industrialisation, and foster innovation
-
-                                        </p>
+                                        <h1>
+                                            <strong>Differently Abled</strong>
+                                        </h1>
 
                                     </div>
                                 </div>
