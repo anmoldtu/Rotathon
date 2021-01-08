@@ -1,18 +1,13 @@
-/* .image-responsive img {
-    filter: gray;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
-
-.image-responsive img:hover {
-    -webkit-filter: grayscale(0);
-    filter: hue-rotate(1);
-} */
-
 .email_class {
     font-family: inherit;
     font-size: inherit;
 }
+
+
+/* $color-one: #1F2124;
+$color-two: #383A3F;
+$color-three: #F68657;
+$color-four: #F6B352; */
 
 .email_class a:hover {
     color: gold !important;
@@ -44,4 +39,19 @@
 #verticalgrad4 {
     /* rgb(1, 36, 53), rgb(40, 0, 48) */
     background-image: linear-gradient(rgb(1, 36, 53), rgb(40, 0, 48))!important;
+}
+
+#prize_card {
+    color: #1F2124 !important;
+    background-image: linear-gradient(rgb(248, 227, 159), rgb(255, 202, 142))!important;
+}
+
+#prize_card2 {
+    color: #1F2124 !important;
+    background-image: linear-gradient(rgb(123, 178, 206), rgb(183, 132, 199))!important;
+}
+
+#prize_card3 {
+    color: #1F2124 !important;
+    background-image: linear-gradient(rgb(146, 255, 152), rgb(114, 248, 215))!important;
 }
