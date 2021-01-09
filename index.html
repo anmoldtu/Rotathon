@@ -53,6 +53,11 @@
 
 
     <style type="text/css">
+        .equal {
+          display: flex;
+          display: -webkit-flex;
+          flex-wrap: wrap;
+        }
     .text-body-typed {
             height: 100px;
             padding: 10px;
@@ -238,6 +243,11 @@
                 padding-top: 60% !important;
                 margin-top: -50% !important;
             }
+            
+            .vid-cont{
+                margin: unset;
+                width: 100%;
+            }
         }
         
         @media screen and (max-width:767px) {
@@ -262,6 +272,11 @@
             .img-resp {
                 padding: 5rem !important;
             }
+            .head-why-rota{
+                font-size: 4rem !important;
+            }
+
+
         }
         
         @media screen and (max-width:576px) {
@@ -667,11 +682,12 @@
         <section style="background-color: black;" id="about-us">
             <div class="hero-full-container background-image-container white-text-container">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="row equal">
+                        <div class="col-md-6 vid-cont" style="margin: auto;">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/NCfeQEFGjJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="col-md-6">
-                            <h1 style="font-family: 'Poppins-Black'; margin-bottom: 4rem;">WHY ROTATHON?</h1>
+                            <h1 class="head-why-rota" style="font-family: 'Poppins-Black'; margin-bottom: 4rem; font-size: 5rem; text-align: left;">WHY ROTATHON?</h1>
                             <p style="font-family: 'Poppins-Regular'; text-align: left;"> <strong>ROTATHON</strong> is a long-term initiative by <strong>Rotaract District 3011</strong> that would run for about six months, including planning and execution. It is an amalgamation of <strong>Hackathon and Ideathon</strong>                                that invites young social entrepreneurs and coders across international Rotaract Districts to compete against each other. The participants will receive rigorous training and mentorship sessions to bring their ideas to life!
                                 <br>This project aims to have young minds develop solutions for social problems across a spectrum of issues! </p>
                         </div>
