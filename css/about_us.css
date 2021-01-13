@@ -14,7 +14,8 @@ $color-four: #F6B352; */
 }
 
 #grad {
-    background-image: linear-gradient(180deg, rgb(208, 243, 253), rgb(255, 210, 233)) !important;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0)) !important;
+    /* background-color: #000000 !important; */
 }
 
 #darkcolorsgrad {
@@ -54,4 +55,8 @@ $color-four: #F6B352; */
 #prize_card3 {
     color: #1F2124 !important;
     background-image: linear-gradient(rgb(146, 255, 152), rgb(114, 248, 215))!important;
+}
+
+#about_us_background {
+    background-image: linear-gradient(rgb(27, 38, 44), rgb(49, 35, 53))!important;
 }

@@ -1,62 +1,62 @@
-.hero-full-container{
-	padding-top:5%;
+.hero-full-container {
+    padding-top: 5%;
 }
 
-@media (min-width:992px){
-	.hero-full-container{
-		padding-top:3%;
-	}
+@media (min-width:992px) {
+    .hero-full-container {
+        padding-top: 3%;
+    }
 }
 
-.background-image-container{
-	text-align:center;
-	/*background-image:url(../wave-hero-background.svg)*/
-	background-color: #02021d;
+.background-image-container {
+    text-align: center;
+    /*background-image:url(../wave-hero-background.svg)*/
+    background-color: #02021d;
 }
 
-
-.background-image-container,.footer-container{
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:top
+.background-image-container,
+.footer-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top
 }
 
-
-.white-text-container a,.white-text-container h1,.white-text-container h2,.white-text-container h3,.white-text-container h4,.white-text-container h5,.white-text-container p{
-	color:#fff
+.white-text-container a,
+.white-text-container h1,
+.white-text-container h2,
+.white-text-container h3,
+.white-text-container h4,
+.white-text-container h5,
+.white-text-container p {
+    color: #fff
 }
 
-
-.hero-full-container h1{
+.hero-full-container h1 {
     font-size: 80px;
 }
 
-.hero-full-container p{
+.hero-full-container p {
     font-size: 20px;
 }
 
-
-@media (max-width:576px){
-	.hero-full-container h1{
-	    font-size: 40px;
-	}
-
-	.hero-full-container p{
-	    font-size: 15px;
-	}
-
-	.sec-head{
-		font-size: 40px !important;
-	}
+@media (max-width:576px) {
+    .hero-full-container h1 {
+        font-size: 40px;
+    }
+    .hero-full-container p {
+        font-size: 15px;
+    }
+    .sec-head {
+        font-size: 40px !important;
+    }
 }
 
-
-.sec-head{
-	color: black;
-	font-size: 50px;
-	text-align: center;
-	padding: 10px;
-	font-family: 'Volkhov';
-	color: white;
-	margin-bottom: 50px;
+.sec-head {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Volkhov';
+    color: white;
+    margin-bottom: 50px;
 }
