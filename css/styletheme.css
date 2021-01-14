@@ -4123,7 +4123,7 @@ a.logo:hover{
     margin: 0 6px;
     text-align: center;
     display: inline-block;
-    color: #111;
+    color: #ffffff;
     
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
@@ -4145,7 +4145,7 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #111;
+    border: 1px solid #ffffff;
     
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -4165,7 +4165,7 @@ a.logo:hover{
     
 }
 .footer-social-links a:hover{
-    color: #fff;
+    color: #ffffff;
 }
 .footer-social-links a:hover:before{
     background: #111;
