@@ -232,6 +232,11 @@
             background: #FFB400;
         }
         
+
+        @media screen and (max-width: 330px)
+        {
+        	body { overflow: hidden; }
+        }
         @media screen and (max-width: 992px) and (min-width: 768px) {
             .img-resp {
                 padding: 15rem !important;
@@ -241,11 +246,18 @@
             .frame-vid {
                 margin-top: 0px !important;
             }
+
+            .heading-rota {
+            	font-size: 80px !important;
+            }
         }
         
         @media screen and (max-width: 1439px) and (min-width: 993px) {
             .frame-vid {
                 margin-top: 150px !important;
+            }
+            .heading-rota {
+            	font-size: 90px !important;
             }
         }
         
@@ -261,7 +273,20 @@
             .frame-vid {
                 margin-top: 0px !important;
             }
+
+            .heading-rota {
+            	font-size: 50px !important;
+            	padding-bottom: 70px !important; 
+            	margin-top: 0px !important;
+            }
+            .text-subtitle{
+            	font-size: 30px !important;
+            }
         }
+
+
+       
+
         
         @media screen and (max-width:767px) {
             .main-timeline .timeline,
@@ -287,6 +312,9 @@
             }
             .head-why-rota {
                 font-size: 4rem !important;
+            }
+            .bt-hov{
+            	margin: 10px;
             }
         }
         
@@ -348,12 +376,12 @@
         .tab-content tpl-minimal-tabs-cont section-text {}
         
         .heading-rota {
-            font-size: 4em !important;
-            padding-bottom: 80px !important;
+            font-size: 4.15em !important;
+            padding-bottom: 40px !important;
         }
         
         .text-subtitle {
-            font-size: 0.75em !important;
+            font-size: 0.65em !important;
         }
         
         .row col-sm-6 {
@@ -449,6 +477,17 @@
     .team-item-image img {
         border-radius: 0;
     }
+
+    .dpost{
+	   -webkit-filter: invert(1);
+	   filter: invert(1);
+    }
+    .bt-hov{
+    	transition-duration: 0.4s;
+    }
+    .bt-hov:hover{
+    	border-radius: 20px;
+    }
     </style>
 
 
@@ -498,15 +537,15 @@
                                             </li>
                                         </ul> -->
                                 </div>
-                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30 heading-rota" style="font-family: 'Poppins-Black'; font-size: 80px; width: 100%; letter-spacing: 0.3em; padding-bottom: 140px; font-weight: 600;">
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30 heading-rota" style="font-family: 'Poppins-Black'; font-size: 120px; width: 100%; letter-spacing: 0.3em; padding-bottom: 140px; font-weight: 600; margin-top: -100px;">
                                     <br>
                                     <div id="typed-strings">
                                         <p>HACKATHON</p>
                                         <p>IDEATHON</p>
-                                        <p>ROTATHON<span class="text-subtitle" style="font-size: 40px; text-transform: none; letter-spacing: 0em; display: block;"><br> Where Ideas Meet Innovation</span></p>
+                                        <p>ROTATHON<span class="text-subtitle" style="font-size: 40px; text-transform: none; letter-spacing: 0em; display: block;"><br> INNOVATE<span style="color: #D9375C"> .</span> EMPOWER<span style="color: #D9375C"> .</span> IMPACT</span></p>
                                         <!-- <p>It <em>types</em> out sentences.</p> -->
                                     </div>
-                                    <div class="text-body-typed">
+                                    <div class="text-body-typed" style="height:160px;">
                                         <span id="typed"></span>
                                     </div>
                                 </h2>
@@ -516,8 +555,8 @@
                                 <h3 class="hs-line-11 font-alt ">
 
 
-                                    REGISTRATIONS BEGIN SOON!
-                                    <BR> NEW DELHI, INDIA
+                                    <button type="button" onclick="window.open('https://rotathon3011.devpost.com/','_blank')" target="_blank" class="btn btn-lg btn-primary bt-hov" style="background-color: #D9375C; border-color: #D9375C; font-family: 'Poppins-Black'; ">APPLY ON &nbsp; <img src="dp.svg" class="dpost" width="18px" height="18px" style="padding-bottom: 3px;">EVPOST!</button>
+                                    <button type="button" onclick="window.open('https://discord.gg/7R3aMCJHen','_blank')" class="btn btn-lg btn-primary bt-hov" style="background-color: #7189DA; border-color: #7189DA; font-family: 'Poppins-Black'; ">JOIN US ON &nbsp; <i class="fab fa-discord"></i> DISCORD!</button>
                                 </h3>
 
                             </div>
@@ -707,7 +746,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 vid-cont" style="margin: auto;">
-                            <iframe class="frame-vid" width="100%" height="300" style="margin-top: 100px;" src="https://www.youtube.com/embed/NCfeQEFGjJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="frame-vid" width="100%" height="300" style="margin-top: 70px;" src="https://www.youtube.com/embed/NCfeQEFGjJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="col-md-6">
                             <h1 class="head-why-rota" style="font-family: 'Poppins-Black'; margin-bottom: 4rem; font-size: 5rem; text-align: left;">WHAT IS ROTATHON?</h1>
@@ -1430,10 +1469,12 @@
                 <div class="footer-social-links mb-110 mb-xs-40">
                     <a href="https://www.facebook.com/Rotathon21-103604988297897/" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
                     <!-- <a href="https://twitter.com/rotaractdtu?lang=en" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a> -->
+                    <a href="https://discord.gg/7R3aMCJHen" title="discord" target="_blank"><i class="fab fa-discord"></i></a>
                     <a href="https://instagram.com/rotathon?igshid=1ndu0f8p9bte" title="Instagarm" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="mailto:info@rotathon.tech" title="Mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.youtube.com/watch?v=NCfeQEFGjJ4" title="wordpress" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/watch?v=NCfeQEFGjJ4" title="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.linkedin.com/company/rotathon/" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://rotathon3011.devpost.com/" title="devpost" target="_blank"><img src="dp.svg" class="dpost" width="15px" height="15px"></a>
 
                 </div>
                 <!-- End Social Links -->
