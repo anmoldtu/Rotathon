@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Rotathon | Frequently Asked Questions</title>
+    <title>Rotathon | Rules & Regulations</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta charset="utf-8">
@@ -32,39 +32,76 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/styled.css">
+
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/vertical-rhythm.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,900&display=swap" rel="stylesheet" <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/about_us.css">
 
     <style type="text/css">
-        @font-face {
-            font-family: Poppins-Regular;
-            src: url('fonts/Poppins/Poppins-Regular.ttf');
+        ul{
+            padding-left: 10px !important; 
+        }
+        .page-section {
+            padding-top: 50px;
+            padding-bottom: 0;
         }
         
-        @font-face {
-            font-family: Poppins-Bold;
-            src: url('fonts/Poppins/Poppins-Bold.ttf');
+        .equal {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
         }
         
-        @font-face {
-            font-family: Poppins-Thin;
-            src: url('fonts/Poppins/Poppins-Thin.ttf');
+        @media screen and (max-width: 1439px) and (min-width: 993px) {
+            .img-rtr {
+                margin-top: 60px !important;
+            }
         }
         
-        @font-face {
-            font-family: Poppins-Black;
-            src: url('fonts/Poppins/Poppins-Black.ttf');
+        @media screen and (max-width: 992px) and (min-width: 768px) {
+            .img-rtr {
+                margin-top: 0px !important;
+            }
+            .rot-img-resp {
+                margin-bottom: 60px;
+            }
         }
         
-        @font-face {
-            font-family: Poppins-SemiBold;
-            src: url('fonts/Poppins/Poppins-SemiBold.ttf');
+        @media screen and (max-width:769px) {
+            .dist-img-resp {
+                height: 90px !important;
+            }
+            .center-al {
+                text-align: center !important;
+            }
+            .img-rtr {
+                margin-top: 0px !important;
+            }
+            .rot-img-resp {
+                height: 130px !important;
+                margin-bottom: 40px;
+            }
+        }
+        
+        @media screen and (max-width:576px) {
+            .dist-img-resp {
+                height: 50px !important;
+            }
+            .rot-img-resp {
+                height: 90px !important;
+                margin-bottom: 40px;
+            }
+            .rcdtu-img-resp {
+                height: 70px !important;
+            }
         }
 
         
@@ -73,19 +110,9 @@
            filter: invert(1);
         }
     </style>
-    <!-- CSS reset -->
-    <link rel="stylesheet" href="css/reset.css">
-    <!-- Resource style -->
-    <script src="js/modernizr.js"></script>
-    <!-- Modernizr -->
-
-    <link rel="stylesheet" href="css/style4.css">
-    <!-- Resource style -->
-
-
 </head>
 
-<body class="appear-animate">
+<body class="appear-animate" style="background-color: #171717;">
 
     <!-- Page Loader -->
     <div class="page-loader">
@@ -95,6 +122,10 @@
 
     <!-- Page Wrap -->
     <div class="page" id="top">
+
+
+
+
 
         <!-- Navigation panel -->
         <nav class="main-nav transparent stick-fixed" style="background-color: #171717; ">
@@ -111,7 +142,7 @@
                 <!-- Main Menu -->
                 <div class="inner-nav desktop-nav pb-0">
                     <ul class="clearlist local-scroll">
-                        <li><a class="active" href="index.html#" style="color: white">Home</a></li>
+                        <li><a class="active" href="index.html" style="color: white">Home</a></li>
                         <li>
                             <a href="#" class="mn-has-sub" style="color: white">Event<i class="fa fa-angle-down"></i></a>
 
@@ -140,7 +171,7 @@
 
                         </li>
                         <li>
-                            <a href="#about-us" class="mn-has-sub local-scroll" style="color: white">About<i class="fa fa-angle-down"></i></a>
+                            <a href="venue.html" class="mn-has-sub local-scroll" style="color: white">About<i class="fa fa-angle-down"></i></a>
 
 
                             <ul class="mn-sub to-right" style="background-color: #171717; color: white">
@@ -174,7 +205,7 @@
 
                         <!-- Item With Sub -->
                         <li>
-                            <a href="#top" style="color: white">FAQ<i class=""></i></a>
+                            <a href="pages-faq-1.html" style="color: white">FAQ<i class=""></i></a>
 
                             <!-- Sub -->
 
@@ -182,11 +213,11 @@
 
                         </li>
 
+
                         <li>
-                            <a href="rules.html" style="color: white">Rules & Regulations<i class=""></i></a>
+                            <a href="#top" style="color: white">Rules & Regulations<i class=""></i></a>
                         </li>
 
-                        
                         <li>
                             <a href="contactus.html" style="color: white">Contact Us<i class=""></i></a>
                         </li>
@@ -200,7 +231,7 @@
                         <!-- End Item With Sub -->
 
                         <li style="color: white">
-                            <a class="local-scroll" href="index.html#sponsor" style="color: white">Become a Sponsor</a>
+                            <a href="index.html#sponsor" style="color: white">Become a Sponsor</a>
                         </li>
 
                 </div>
@@ -214,145 +245,100 @@
     <!-- End Navigation panel -->
 
 
-    <!-- Head Section -->
-    <section style="background-color: black;">
-        <section class="small-section bg-dark-alfa-30" data-background="faqim.jpg" style="background-position: top;background-size: contain;">
-            <div class="relative container align-left">
+    <section class="small-section bg-dark-alfa-30" data-background="images/wood.jpg" style="background-color: black;">
+        <div class="relative container align-left">
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-md-8">
-                        <h1 style="text-align: center; font-family:'Poppins-Black' !important; font-size: 60px;">FAQs</h1>
-                        <div style="text-align: center; font-family:'Poppins-Regular'; font-weight:300 ; font-size: 25px;">
-                            Frequently Asked Questions
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                    <h2 class="hs-line-11 font-alt mb-20 mb-xs-0 " style="font-family:'Ubuntu',sans-serif ; margin-top: 5%;">RULES & REGULATIONS</h2>
 
-                    <div class="col-md-4 mt-30">
-                        <div class="mod-breadcrumbs font-alt align-right">
-                            <a href="index.html">Home</a>&nbsp;&nbsp;</a>&nbsp;/&nbsp;<span>FAQ</span>
-                        </div>
 
-                    </div>
                 </div>
 
-            </div>
-        </section>
-    </section>
-    <!-- End Head Section -->
+                <!-- <div class="col-md-4 mt-30">
+                    <div class="mod-breadcrumbs font-alt align-right">
+                        <a href="index.html">Home</a> &nbsp;&nbsp;/&nbsp;<span>About</span>&nbsp;&nbsp;/&nbsp;<span>Venue</span>
+                    </div>
 
-
-    <!-- Section -->
-    <section class="page-section" style="background-color: #000000;">
-        <div class="container relative" style="width: 100%">
-
-            <div class="row section-text">
-                <div class="col-md-8 col-md-offset-2">
-
-                    <!-- Accordion -->
-                    <dl class="toggle">
-
-                        <dt>
-                                    <a href="">What is a hackathon?</a>
-                                </dt>
-                        <dd>
-                            A Hackathon is a unique environment wherein teams of innovators engage in design thinking.
-                            <br><br> Each team is challenged to come up with an innovative product (or a prototype of a product or a business model or a service-based model) that is a solution to the given problem statement.<br><br> Rotathon is not only
-                            looking for project pitches that solve the given problem statement but also promote social entrepreneurship and change. At Rotathon, all the pitches (for each problem statement, separately) shall compete with each other to
-                            be declared the ultimate winner!
-                            <br><br> You can also watch our video on our <a href="https://www.instagram.com/p/CJwJfyuBpGQ/">Instagram</a> or <a href="https://youtu.be/kUZrjEjiu1E">Youtube</a> handles explaining what a Hackathon is!
-
-                        </dd>
-
-                        <dt>
-                                    <a href="">How does a virtual hackathon work?
-                                    </a>
-                                </dt>
-                        <dd>
-                            In an online or virtual hackathon, all participants are remotely connected. Irrespective of their location, hackathon enthusiasts can participate and demonstrate their skills on an online hackathon platform using various tools. <br><br>                            An online hackathon thus gives everyone the opportunity to participate, showcase their skills, and have fun. Online hackathons are often used for narrowly-defined coding challenges which test participants’ experiences and expertise.
-                            These events can be based on specific APIs, frameworks, or programming languages.
-
-
-                        </dd>
-
-                        <dt>
-                                    <a href="">What is an ideathon?
-                                    </a>
-                                </dt>
-                        <dd>
-                            In an Ideathon, participating teams are expected to brainstorm viable solutions for the given problem statement for their chosen track.<br><br> The problem statements can range from corporate issues to environmental concerns
-                            and the participating teams will be expected to bring possible solutions to eliminate these problems by their innovative ideas.<br><br> They must make a strong pitch for their novel idea to be declared as the winner! Rotathon
-                            has an exciting range of prizes for the winning and the two running-up idea pitches!
-                            <br><br> You can also watch our video on our <a href="https://www.instagram.com/p/CJvEQ2VBCG7/">Instagram</a> or <a href="https://youtu.be/_2u4johdJUM">Youtube</a> handles explaining what an Ideathon is!
-
-                        </dd>
-
-                        <dt>
-                                    <a href="">Where do I get more information?</a>
-                                </dt>
-                        <dd>
-                            Check out our <a href="https://rotathon3011.devpost.com/">Devpost</a> for more info! <br><br>
-
-                            Join our <a href="https://discord.gg/bbWkHFPP">Discord</a> server for the latest updates!
-
-                        </dd>
-
-                        <dt>
-                                    <a href="">What if I can’t code?</a>
-                                </dt>
-                        <dd>
-                            If you can't code, that's totally not a problem! Rotathon is not looking for coders but innovators! Coding is not a prerequisite for participating in Rotathon. We will also be hosting mentorship sessions to help you gain more insight.
-                        </dd>
-
-                        <dt>
-                                    <a href="">What is the benefit of participating?</a>
-                                </dt>
-                        <dd>
-                            Rotathon provides a platform for brilliant exposure to critical thinking skills, as the participants will get first-hand knowledge and guidance from industry leaders. It will help the participants to broaden their horizons by making them connect and interact
-                            with like-minded people and learn from each other. The events will test theoretical as well as practical knowledge of the participants and will also make them learn application-based skills, under the exclusive mentorship program
-                            of Rotathon. This flagship project is designed to provide comprehensive development to the participants and will help them grow in a holistic manner.
-                        </dd>
-
-                        <dt>
-                                    <a href="">Do I need to pay money to register?</a>
-                                </dt>
-                        <dd>
-                            No, Rotathon has no Registration Fees!
-                        </dd>
-                        <!-- <dt>
-                                    <a href="">Is there a code of conduct for hackathon?</a>
-                                </dt>
-                                <dd>
-                                </dd>
-                                <dt>
-                                    <a href="">What if I don’t have a lot of experience with hackathons and programming or technology? Is this event still for me?
-                                    </a>
-                                </dt>
-                                <dd>
-                                </dd> -->
-                        <dt>
-                                    <a href="">What if I don’t come as a team and as an individual?
-                                    </a>
-                                </dt>
-                        <dd>
-                            You can option for registering as an individual and you will be connected with other people participating individually globally in order to form a team!
-                        </dd>
-
-                    </dl>
-                    <!-- End Accordion -->
-
-                </div>
+                </div> -->
             </div>
 
         </div>
     </section>
-    <!-- End Section -->
+
+    <!-- About Section -->
+    <section class="page-section" id="about" style="background-color: black;">
+        <div class="container relative">
+           
+            <div class="row mb-60" id="id2">
+
+                <div class="col-md-12" style="margin: auto;">
+                    <h1 class="hs-line-7 mb-20" style="font-size:40px; text-align:center ;font-family:'Ubuntu';text-transform: none; font-weight: 300; color: #ededed;">HACKATHON</h1>
+                    <hr>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="section-text">
+
+                        <h1 class="hs-line-7" style="font-size:15px;font-family:'Dosis'; text-align:justify ;text-transform: none; font-weight: 300; color:white;">
+                            <ul>
+                                <li class="mb-20">Each team will consist of 2-4 members. In case you don’t have a team, you can reach out to us on Discord, and we will pair you up with someone.</li>
+                                <li class="mb-20">Each team should choose one of the given tracks.</li>
+                                <li class="mb-20">The solution should be based on the problem statement for that particular track</li>
+                                <li class="mb-20">For competing in Round 1, the team has to submit their idea in the form of a presentation or a solution document on the shared <a href="https://tinyurl.com/j9qaonsx" style="color: white">template</a></li>
+                                <li class="mb-20">Your submissions will be evaluated by a panel of judges on criteria (Feasibility,Innovation, Social Empowerment, Impact, Adaptability, Business Model, Sustainability).</li>
+                                <li class="mb-20">If qualified for round 2, the team has to develop a working product or a prototype or a service-based business model to demonstrate the idea submitted in round 1.</li>
+                                <li class="mb-20">The evaluation criteria for round 2 will be based on the end product submitted and it would be reviewed by the beneficiaries (i.e., the target audience) before the evaluation by the panel of judges.</li>
+                                <li class="mb-20">The Winner of each Track shall have a One-on-One pitch with Track Sponsor.
+The Track Winner can either accept the Track Reward, in such a scenario partial ownership of
+the winning idea will be transferred to the respective track sponsor. However, the Winning Team can also choose to negotiate on equity if the team is willing to work in partnership with the Track Sponsor for end-to-end delivery.</li>
+                                <li class="mb-20">The organizing committee would not publicize any of the solution documents submitted by the team to anyone apart from the panel of judges and the respective track sponsors.</li>
+                            </ul>
+                            
+                        </h1>
+                    </div>
+                </div>
+            </div>
+                        <div class="row mb-100" id="id2">
+
+                <div class="col-md-12" style="margin: auto;">
+                    <h1 class="hs-line-7 mb-20" style="font-size:40px; text-align:center ;font-family:'Ubuntu';text-transform: none; font-weight: 300; color: #ededed;">IDEATHON</h1>
+                    <hr>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="section-text">
+
+                        <h1 class="hs-line-7" style="font-size:15px;font-family:'Dosis'; text-align:justify ;text-transform: none; font-weight: 300; color:white;">
+                            <ul>
+                                <li class="mb-20">Each team will consist of 2-4 members. In case you don’t have a team, you can reach out to us on Discord, and we will pair you up with someone.</li>
+                                <li class="mb-20">Each team should choose one of the given tracks.</li>
+                                <li class="mb-20">The solution should be based on the problem statement for that particular track</li>
+                                <li class="mb-20">For competing in Round 1, the team has to submit their idea in the form of a presentation or a solution document on the shared <a href="https://tinyurl.com/j9qaonsx" style="color: white">template</a></li>
+                                <li class="mb-20">Your submissions will be evaluated by a panel of judges on criteria (Feasibility,Innovation, Social Empowerment, Impact, Adaptability, Business Model, Sustainability).</li>
+                                <li class="mb-20">If qualified for round 2, the team has to prepare an elevator’s pitch highlighting the plan of
+action and solution walkthrough.</li>
+                                <li class="mb-20">TThe evaluation criteria for round 2 will be based on the elevator’s pitch given and it would be
+reviewed by the beneficiaries (i.e., the target audience) before the evaluation by the panel of
+judges.</li>
+                                <li class="mb-20">The Winner of each Track shall have a One-on-One pitch with Track Sponsor.
+The Track Winner can either accept the Track Reward, in such a scenario partial ownership of
+the winning idea will be transferred to the respective track sponsor. However, the Winning Team can also choose to negotiate on equity if the team is willing to work in partnership with the Track Sponsor for end-to-end delivery.</li>
+                                <li class="mb-20">The organizing committee would not publicize any of the solution documents submitted by the team to anyone apart from the panel of judges and the respective track sponsors.</li>
+                            </ul>
+                            
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer style="background-color: #000000;" class="page-section bg-gray-lighter footer pb-40">
+    <footer id="grad" class="page-section bg-gray-lighter footer pb-40">
         <div class="container">
 
             <!-- Footer Logo -->
