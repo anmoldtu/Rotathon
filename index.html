@@ -67,35 +67,35 @@
 
 
     <style type="text/css">
-        .equal {
+    .equal {
             display: flex;
             display: -webkit-flex;
             flex-wrap: wrap;
         }
-
+        
         .text-body-typed {
             height: 100px;
             padding: 10px;
         }
-
+        
         .main-timeline {
             font-family: 'Nunito', sans-serif;
             position: relative;
         }
-
+        
         .main-timeline:after {
             content: '';
             display: block;
             clear: both;
         }
-
+        
         .main-timeline .timeline {
             width: 50%;
             padding: 20px 0 0;
             margin: 0 10px 0 0;
             float: left;
         }
-
+        
         .main-timeline .timeline-content {
             color: #827e7e;
             min-height: 90px;
@@ -104,11 +104,11 @@
             position: relative;
             z-index: 1;
         }
-
+        
         .main-timeline .timeline-content:hover {
             text-decoration: none;
         }
-
+        
         .main-timeline .timeline-icon {
             color: #107793;
             background-color: #fff;
@@ -124,7 +124,7 @@
             top: -20px;
             right: -35px;
         }
-
+        
         .main-timeline .timeline-icon:before,
         .main-timeline .timeline-icon:after {
             content: '';
@@ -137,7 +137,7 @@
             top: 1px;
             z-index: -1;
         }
-
+        
         .main-timeline .timeline-icon:after {
             height: 40%;
             width: 55%;
@@ -146,7 +146,7 @@
             left: -55%;
             clip-path: polygon(50% 0, 50% 20%, 100% 20%, 100% 80%, 50% 80%, 50% 100%, 0% 50%);
         }
-
+        
         .main-timeline .title {
             color: #107793;
             font-size: 22px;
@@ -154,209 +154,187 @@
             text-transform: uppercase;
             margin: 0 0 3px;
         }
-
+        
         .main-timeline .description {
             font-size: 15px;
             margin: 0;
         }
-
+        
         .main-timeline .timeline:nth-child(even) {
             float: right;
             margin: 0 0 0 10px;
         }
-
+        
         .main-timeline .timeline:nth-child(even) .timeline-content {
             padding: 0 0 0 85px;
         }
-
+        
         .main-timeline .timeline:nth-child(even) .timeline-icon {
             right: auto;
             left: -35px;
         }
-
+        
         .main-timeline .timeline:nth-child(even) .timeline-icon:before {
             left: auto;
             right: -8px;
         }
-
+        
         .main-timeline .timeline:nth-child(even) .timeline-icon:after {
             transform: translateY(-50%) rotateY(180deg);
             left: auto;
             right: -55%;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+2) .timeline-icon,
         .main-timeline .timeline:nth-child(4n+2) .title {
             color: #1ba0d1;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+2) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+2) .timeline-icon:after {
             background: #1ba0d1;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+3) .timeline-icon,
         .main-timeline .timeline:nth-child(4n+3) .title {
             color: #f47b18;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+3) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+3) .timeline-icon:after {
             background: #f47b18;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+4) .timeline-icon,
         .main-timeline .timeline:nth-child(4n+4) .title {
             color: #d1327e;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+4) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+4) .timeline-icon:after {
             background: #d1327e;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+5) .timeline-icon,
         .main-timeline .timeline:nth-child(4n+5) .title {
             color: #619310;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+5) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+5) .timeline-icon:after {
             background: #619310;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+6) .timeline-icon,
         .main-timeline .timeline:nth-child(4n+6) .title {
             color: #8A2BE2;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+6) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+6) .timeline-icon:after {
             background: #8A2BE2;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+7) .timeline-icon,
         .main-timeline .timeline:nth-child(4n+7) .title {
             color: #FFB400;
         }
-
+        
         .main-timeline .timeline:nth-child(4n+7) .timeline-icon:before,
         .main-timeline .timeline:nth-child(4n+7) .timeline-icon:after {
             background: #FFB400;
         }
-
-
+        
         @media screen and (max-width: 330px) {
             body {
                 overflow: hidden;
             }
         }
-
+        
         @media screen and (max-width: 992px) and (min-width: 768px) {
             .img-resp {
                 padding: 15rem !important;
                 padding-top: 10rem;
                 padding-bottom: 10rem;
             }
-
             .frame-vid {
                 margin-top: 0px !important;
             }
-
             .heading-rota {
                 font-size: 80px !important;
             }
         }
-
+        
         @media screen and (max-width: 1439px) and (min-width: 993px) {
             .frame-vid {
                 margin-top: 150px !important;
             }
-
             .heading-rota {
                 font-size: 90px !important;
             }
         }
-
+        
         @media screen and (max-width:769px) {
             .wave-margin {
                 padding-top: 60% !important;
                 margin-top: -50% !important;
             }
-
             .vid-cont {
                 margin: unset;
                 width: 100%;
             }
-
             .frame-vid {
                 margin-top: 0px !important;
             }
-
             .heading-rota {
                 font-size: 50px !important;
                 padding-bottom: 70px !important;
                 margin-top: 0px !important;
             }
-
             .text-subtitle {
                 font-size: 30px !important;
             }
         }
-
-
-
-
-
+        
         @media screen and (max-width:767px) {
-
             .main-timeline .timeline,
             .main-timeline .timeline:nth-child(even) {
                 width: 100%;
                 margin: 0 0 20px 0;
             }
-
             .main-timeline .timeline-content {
                 padding: 0 120px 0 0;
                 min-height: 80px;
             }
-
             .main-timeline .timeline:nth-child(even) .timeline-content {
                 padding: 0 0 0 120px;
             }
-
             .main-timeline .timeline-icon {
                 right: 0;
             }
-
             .main-timeline .timeline:nth-child(even) .timeline-icon {
                 left: 0;
             }
-
             .img-resp {
                 padding: 5rem !important;
             }
-
             .head-why-rota {
                 font-size: 4rem !important;
             }
-
             .bt-hov {
                 margin: 10px;
             }
         }
-
+        
         @media screen and (max-width:576px) {
             .main-timeline .timeline {
                 padding-top: 60px;
             }
-
             .main-timeline .timeline-content,
             .main-timeline .timeline:nth-child(even) .timeline-content {
                 padding: 0;
                 min-height: auto;
             }
-
             .main-timeline .timeline-icon {
                 font-size: 30px;
                 line-height: 51px;
@@ -364,189 +342,163 @@
                 width: 50px;
                 top: -60px;
             }
-
             .timer-sec {
                 border-bottom-right-radius: 30% !important;
                 border-bottom-left-radius: 30% !important;
             }
-
             .about-join-us-head {
                 text-align: center;
                 margin-bottom: 0.8em;
                 font-size: 35px !important;
             }
-
             .about-join-us-list {
                 list-style: none !important;
                 list-style-type: none !important;
                 text-align: center !important;
                 padding-inline-start: 0px;
             }
-
             .about-join-us-list li {
                 font-size: 18px !important;
                 padding: 8px 0px;
                 margin-bottom: 18px;
             }
-
             .only-phone {
                 display: block !important;
             }
         }
-
+        
         .main-timeline .title {
             font-size: 20px;
         }
+    }
+    @font-face {
+        font-family: Bord;
+        src: url("Bord.otf") format("opentype");
+    }
+    @font-face {
+        font-family: Bord;
+        font-weight: bold;
+        src: url("Bord.otf") format("opentype");
+    }
+    @media (max-width: 479px) {
+        .tab-content tpl-minimal-tabs-cont section-text {}
+        
+        .heading-rota {
+            font-size: 4.15em !important;
+            padding-bottom: 40px !important;
         }
-
-        @font-face {
-            font-family: Bord;
-            src: url("Bord.otf") format("opentype");
+        
+        .text-subtitle {
+            font-size: 0.65em !important;
         }
-
-        @font-face {
-            font-family: Bord;
-            font-weight: bold;
-            src: url("Bord.otf") format("opentype");
+        
+        .row col-sm-6 {
+            margin-top: 155px;
         }
-
-        @media (max-width: 479px) {
-            .tab-content tpl-minimal-tabs-cont section-text {}
-
-            .heading-rota {
-                font-size: 4.15em !important;
-                padding-bottom: 40px !important;
-            }
-
-            .text-subtitle {
-                font-size: 0.65em !important;
-            }
-
-            .row col-sm-6 {
-                margin-top: 155px;
-            }
-
-            .video-container iframe {
-                position: absolute;
-                top: -285px;
-                left: 0;
-                width: 100%;
-                padding-top: 5px;
-            }
-
-            #spons-head {
-                font-size: 43px !important;
-            }
-        }
-
-        .video-container {
-            position: relative;
-            -webkit-overflow-scrolling: touch;
-            padding-top: 20px;
-        }
-
-        td span {
-            font-size: 10px;
-        }
-
-        #time-section {
-            width: 75%;
-            margin-inline: auto;
-        }
-
-        .abcd::after {
-            height: 40%;
-            width: 55%;
-            border-radius: 0;
-            top: 50%;
-            left: -55%;
-            clip-path: polygon(50% 0, 50% 20%, 100% 20%, 100% 80%, 50% 80%, 50% 100%, 0% 50%);
-        }
-
-        /* ---- reset ---- */
-        body {
-            font: normal 75% Arial, Helvetica, sans-serif;
-        }
-
-        canvas {
-            display: block;
-            vertical-align: bottom;
-            height: 100% !important;
-        }
-
-        /* ---- particles.js container ---- */
-        #particles-js {
+        
+        .video-container iframe {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: #000000;
-            background-image: url("");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%;
-        }
-
-        /* ---- stats.js ---- */
-        .count-particles {
-            background: #000022;
-            position: absolute;
-            top: 48px;
+            top: -285px;
             left: 0;
-            width: 80px;
-            color: #13E8E9;
-            font-size: .8em;
-            text-align: left;
-            text-indent: 4px;
-            line-height: 14px;
-            padding-bottom: 2px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
+            width: 100%;
+            padding-top: 5px;
         }
-
-        .js-count-particles {
-            font-size: 1.1em;
+        
+        #spons-head {
+            font-size: 43px !important;
         }
-
-        #stats,
-        .count-particles {
-            -webkit-user-select: none;
-            margin-top: 5px;
-            margin-left: 5px;
-        }
-
-        #stats {
-            border-radius: 3px 3px 0 0;
-            overflow: hidden;
-        }
-
-        .count-particles {
-            border-radius: 0 0 3px 3px;
-        }
-
-        .about-join-us-list li {
-            padding: 5px 0px;
-        }
-
-        .only-phone {
-            display: none;
-        }
-
-        .team-item-image img {
-            border-radius: 0;
-        }
-
-        .dpost {
-            -webkit-filter: invert(1);
-            filter: invert(1);
-        }
-
-        .bt-hov {
-            transition-duration: 0.4s;
-        }
-
-        .bt-hov:hover {
-            border-radius: 20px;
-        }
+    }
+    .video-container {
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 20px;
+    }
+    td span {
+        font-size: 10px;
+    }
+    #time-section {
+        width: 75%;
+        margin-inline: auto;
+    }
+    .abcd::after {
+        height: 40%;
+        width: 55%;
+        border-radius: 0;
+        top: 50%;
+        left: -55%;
+        clip-path: polygon(50% 0, 50% 20%, 100% 20%, 100% 80%, 50% 80%, 50% 100%, 0% 50%);
+    }
+    /* ---- reset ---- */
+    body {
+        font: normal 75% Arial, Helvetica, sans-serif;
+    }
+    canvas {
+        display: block;
+        vertical-align: bottom;
+        height: 100% !important;
+    }
+    /* ---- particles.js container ---- */
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    /* ---- stats.js ---- */
+    .count-particles {
+        background: #000022;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 80px;
+        color: #13E8E9;
+        font-size: .8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px;
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+    .js-count-particles {
+        font-size: 1.1em;
+    }
+    #stats,
+    .count-particles {
+        -webkit-user-select: none;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    #stats {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+    }
+    .count-particles {
+        border-radius: 0 0 3px 3px;
+    }
+    .about-join-us-list li {
+        padding: 5px 0px;
+    }
+    .only-phone {
+        display: none;
+    }
+    .team-item-image img {
+        border-radius: 0;
+    }
+    .dpost {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+    .bt-hov {
+        transition-duration: 0.4s;
+    }
+    .bt-hov:hover {
+        border-radius: 20px;
+    }
     </style>
 
 
@@ -571,8 +523,7 @@
 
 
                 <!-- Hero Content -->
-                <div class="home-content"
-                    style="position: absolute; z-index: 10; background-color: black; opacity: 0.7">
+                <div class="home-content" style="position: absolute; z-index: 10; background-color: black; opacity: 0.7">
                     <div class="home-text">
 
                         <br><br><br>
@@ -597,17 +548,15 @@
                                             </li>
                                         </ul> -->
                                 </div>
-                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30 heading-rota"
-                                    style="font-family: 'Poppins-Black'; font-size: 120px; width: 100%; letter-spacing: 0.3em; padding-bottom: 140px; font-weight: 600; margin-top: -100px;">
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30 heading-rota" style="font-family: 'Poppins-Black'; font-size: 120px; width: 100%; letter-spacing: 0.3em; padding-bottom: 140px; font-weight: 600; margin-top: -100px;">
                                     <br>
                                     <div id="typed-strings">
                                         <p>HACKATHON</p>
                                         <p>IDEATHON</p>
-                                        <p>ROTATHON<span class="text-subtitle"
-                                                style="font-size: 40px; text-transform: none; letter-spacing: 0em; display: block;"><br>
-                                                INNOVATE<span style="color: #D9375C"> .</span> EMPOWER<span
-                                                    style="color: #D9375C"> .</span> IMPACT<span style="color: #D9375C">
-                                                    .</span></span></p>
+                                        <p>ROTATHON<span class="text-subtitle" style="font-size: 40px; text-transform: none; letter-spacing: 0em; display: block;"><br>
+                                                INNOVATE<span style="color: #D9375C"> .</span> EMPOWER<span style="color: #D9375C"> .</span> IMPACT<span style="color: #D9375C">
+                                                    .</span></span>
+                                        </p>
                                         <!-- <p>It <em>types</em> out sentences.</p> -->
                                     </div>
                                     <div class="text-body-typed" style="height:160px;">
@@ -620,15 +569,10 @@
                                 <h3 class="hs-line-11 font-alt ">
 
 
-                                    <button type="button"
-                                        onclick="window.open('https://rotathon3011.devpost.com/','_blank')"
-                                        target="_blank" class="btn btn-lg btn-primary bt-hov"
-                                        style="background-color: #D9375C; border-color: #D9375C; font-family: 'Poppins-Black'; ">APPLY
+                                    <button type="button" onclick="window.open('https://rotathon3011.devpost.com/','_blank')" target="_blank" class="btn btn-lg btn-primary bt-hov" style="background-color: #D9375C; border-color: #D9375C; font-family: 'Poppins-Black'; ">APPLY
                                         ON &nbsp; <img src="dp.svg" class="dpost" width="18px" height="18px"
                                             style="padding-bottom: 3px;">EVPOST!</button>
-                                    <button type="button" onclick="window.open('https://discord.gg/bbWkHFPP','_blank')"
-                                        class="btn btn-lg btn-primary bt-hov"
-                                        style="background-color: #7189DA; border-color: #7189DA; font-family: 'Poppins-Black'; ">JOIN
+                                    <button type="button" onclick="window.open('https://discord.gg/bbWkHFPP','_blank')" class="btn btn-lg btn-primary bt-hov" style="background-color: #7189DA; border-color: #7189DA; font-family: 'Poppins-Black'; ">JOIN
                                         US ON &nbsp; <i class="fab fa-discord"></i> DISCORD!</button>
                                 </h3>
 
@@ -748,6 +692,10 @@
                         </li>
 
                         <li>
+                            <a href="tracksDetails.html" style="color: white">Tracks<i class=""></i></a>
+                        </li>
+
+                        <li>
                             <a href="rules.html" style="color: white">Rules & Regulations<i class=""></i></a>
                         </li>
 
@@ -774,19 +722,18 @@
             </div>
             </ul>
 
-    </div>
-    </nav>
-    <!-- End Navigation panel -->
+            </div>
+        </nav>
+        <!-- End Navigation panel -->
 
-    <section style="background-color: #02021d;">
-        <div class="timer-sec"
-            style="border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; background-color: black;">
-            <div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-80">
-                <h3 class="l1-txt1 txt-center respon1">
-                    Coming Soon
-                </h3>
+        <section style="background-color: #02021d;">
+            <div class="timer-sec" style="border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; background-color: black;">
+                <div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-80">
+                    <h3 class="l1-txt1 txt-center respon1">
+                        Coming Soon
+                    </h3>
 
-                <!-- <div class="flex-w flex-c-m cd100">
+                    <!-- <div class="flex-w flex-c-m cd100">
                         <div class="flex-col-c wsize1 m-b-30">
                             <span class="l1-txt2 p-b-9 days">35</span>
                             <span class="s1-txt1 where1 p-l-35">Days</span>
@@ -807,131 +754,103 @@
                             <span class="s1-txt1 where1 p-l-35">Seconds</span>
                         </div>
                     </div> -->
-                <!-- css file : styletimer js file: timer -->
-                <div class="container">
-                    <div id="countdown">
-                        <ul id="timer_list" style="padding-inline-start:0px;">
-                            <li><span id="days" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span
-                                    style="font-family: 'Poppins-Regular'; font-size:1em;">days</span></li>
-                            <li><span id="hours" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span
-                                    style="font-family: 'Poppins-Regular'; font-size:1em;">hours</span></li>
-                            <li><span id="minutes" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span
-                                    style="font-family: 'Poppins-Regular'; font-size:1em;">minutes</span></li>
-                            <li><span id="seconds" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span
-                                    style="font-family: 'Poppins-Regular'; font-size:1em;">seconds</span></li>
-                        </ul>
-                    </div>
+                    <!-- css file : styletimer js file: timer -->
+                    <div class="container">
+                        <div id="countdown">
+                            <ul id="timer_list" style="padding-inline-start:0px;">
+                                <li><span id="days" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span style="font-family: 'Poppins-Regular'; font-size:1em;">days</span></li>
+                                <li><span id="hours" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span style="font-family: 'Poppins-Regular'; font-size:1em;">hours</span></li>
+                                <li><span id="minutes" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span style="font-family: 'Poppins-Regular'; font-size:1em;">minutes</span></li>
+                                <li><span id="seconds" style="font-family: 'Poppins-Black'; font-size: 5em;"></span><span style="font-family: 'Poppins-Regular'; font-size:1em;">seconds</span></li>
+                            </ul>
+                        </div>
 
+                    </div>
+                </div>
+                <div>
+        </section>
+
+        <section style="background-color: black;" id="about-us">
+            <div class="hero-full-container background-image-container white-text-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 vid-cont" style="margin: auto;">
+                            <iframe class="frame-vid" width="100%" height="300" style="margin-top: 70px;" src="https://www.youtube.com/embed/NCfeQEFGjJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="head-why-rota" style="font-family: 'Poppins-Black'; margin-bottom: 4rem; font-size: 5rem; text-align: left;">
+                                WHAT IS ROTATHON?</h1>
+
+                            <p style="font-family: 'Poppins-Regular'; text-align: left;"> <strong>ROTATHON, Hackathon &
+                                Ideathon</strong>, invites social entrepreneurs and innovators across the globe to develop solutions for a spectrum of problem statements. After the screening of ideas in phase 1, the top 30 teams will be shortlisted. These
+                                teams will go through a round of rigorous training and consecutive mentorship to bring their ideas to life. The teams must prepare for a never seen before mega-challenging showdown in April!
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-    </section>
+        </section>
 
-    <section style="background-color: black;" id="about-us">
-        <div class="hero-full-container background-image-container white-text-container">
+
+
+        <!--WHAT IS ROTATHON SECTION-->
+        <section style="background-color:#02021d;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 vid-cont" style="margin: auto;">
-                        <iframe class="frame-vid" width="100%" height="300" style="margin-top: 70px;"
-                            src="https://www.youtube.com/embed/NCfeQEFGjJ4" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div class="col-md-6" style="margin-top: 2rem;">
+                        <h1 class="about-join-us-head" style="font-family: 'Poppins-Black'; font-size: 5rem;">WHY JOIN US?
+                        </h1>
+                        <div>
+                            <ul class="about-join-us-list" style=" list-style-type: '</>  ';">
+                                <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span class="only-phone"><strong>&lt;/&gt;</strong></span>Rotathon inculcates social entrepreneurship and responsibility </li>
+                                <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span class="only-phone"><strong>&lt;/&gt;</strong></span>It is a hub of curious innovators from all age groups and professions</li>
+                                <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span class="only-phone"><strong>&lt;/&gt;</strong></span>Witness birth of business models having huge social and environmental impact</li>
+                                <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span class="only-phone"><strong>&lt;/&gt;</strong></span>With a large target audience, it has diverse beneficiaries and challenging problem statements</li>
+                                <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span class="only-phone"><strong>&lt;/&gt;</strong></span>Rotathon enhances solutions iteratively via mentorship</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <h1 class="head-why-rota"
-                            style="font-family: 'Poppins-Black'; margin-bottom: 4rem; font-size: 5rem; text-align: left;">
-                            WHAT IS ROTATHON?</h1>
-
-                        <p style="font-family: 'Poppins-Regular'; text-align: left;"> <strong>ROTATHON, Hackathon &
-                                Ideathon</strong>, invites social entrepreneurs and innovators across the globe to
-                            develop solutions for a spectrum of problem statements. After the screening of ideas in
-                            phase 1, the top 30 teams
-                            will be shortlisted. These teams will go through a round of rigorous training and
-                            consecutive mentorship to bring their ideas to life. The teams must prepare for a never seen
-                            before mega-challenging showdown in April!
-
+                        <img class="img-resp" src="images/123 [Converted].svg" style="padding: 4rem;">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!--END-->
 
+        <!-- Sponsor and mentor section -->
+        <section class="wave-margin" id="sponsor" style="background-image:url(tmp-back.svg); background-size:cover;background-repeat:no-repeat;background-position:top; padding-top: 20%; background-color: black; margin-top: -8%;">
+            <div class="container">
+                <div class="row">
 
-
-    <!--WHAT IS ROTATHON SECTION-->
-    <section style="background-color:#02021d;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="margin-top: 2rem;">
-                    <h1 class="about-join-us-head" style="font-family: 'Poppins-Black'; font-size: 5rem;">WHY JOIN US?
-                    </h1>
-                    <div>
-                        <ul class="about-join-us-list" style=" list-style-type: '</>  ';">
-                            <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span
-                                    class="only-phone"><strong>&lt;/&gt;</strong></span>Rotathon inculcates social
-                                entrepreneurship and responsibility </li>
-                            <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span
-                                    class="only-phone"><strong>&lt;/&gt;</strong></span>It is a hub of curious
-                                innovators from all age groups and professions</li>
-                            <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span
-                                    class="only-phone"><strong>&lt;/&gt;</strong></span>Witness birth of business models
-                                having huge social and environmental impact</li>
-                            <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span
-                                    class="only-phone"><strong>&lt;/&gt;</strong></span>With a large target audience, it
-                                has diverse beneficiaries and challenging problem statements</li>
-                            <li style="font-size: 1.75rem; font-family: 'Poppins-Regular';"><span
-                                    class="only-phone"><strong>&lt;/&gt;</strong></span>Rotathon enhances solutions
-                                iteratively via mentorship</li>
-                        </ul>
+                    <div class="col-md-6">
+                        <img class="img-resp" src="images/keep-calm2.png" style="padding: 10rem; height: 85%;width: 100%;">
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-resp" src="images/123 [Converted].svg" style="padding: 4rem;">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--END-->
-
-    <!-- Sponsor and mentor section -->
-    <section class="wave-margin" id="sponsor"
-        style="background-image:url(tmp-back.svg); background-size:cover;background-repeat:no-repeat;background-position:top; padding-top: 20%; background-color: black; margin-top: -8%;">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6">
-                    <img class="img-resp" src="images/keep-calm2.png" style="padding: 10rem; height: 85%;width: 100%;">
-                </div>
-                <div class="col-md-6" style=" margin-top: 2rem;">
-                    <h1 class="about-join-us-head" style="font-family: 'Ubuntu','Poppins-Black'; font-size: 5rem;">
-                        Sponsor Us</h1>
-                    <div>
-                        <p style="font-family: 'Poppins-Regular'; font-size: 2rem;"> Our sponsors help us unite emerging
-                            developers, designers, and builders. Our sponsors make it possible for hackers to create
-                            something they're proud of. Stay tuned as we confirm more sponsors
-                            <br>
-                            <br> Interested in sponsoring? Email us at
-                            <br>
-                            <span class="email_class" style=" font-size: 2rem;"><a
+                    <div class="col-md-6" style=" margin-top: 2rem;">
+                        <h1 class="about-join-us-head" style="font-family: 'Ubuntu','Poppins-Black'; font-size: 5rem;">
+                            Sponsor Us</h1>
+                        <div>
+                            <p style="font-family: 'Poppins-Regular'; font-size: 2rem;"> Our sponsors help us unite emerging developers, designers, and builders. Our sponsors make it possible for hackers to create something they're proud of. Stay tuned as we confirm more sponsors
+                                <br>
+                                <br> Interested in sponsoring? Email us at
+                                <br>
+                                <span class="email_class" style=" font-size: 2rem;"><a
                                     href="mailto: rotathon.sponsors@gmail.com"
                                     style="font-family: 'Ubuntu'; color: #1ba0d1; font-weight: bolder; text-decoration: none;">info@rotathon.tech</a></span>
-                            <br><br>
-                            <a href="mailto: info@rotathon.tech" class="btn btn-mod btn-w btn-medium btn-round "
-                                style="font-weight: bold; margin-bottom: 20px;">Sponsor Us</a> &nbsp;
-                            <a href="https://forms.gle/TnKAPHte5gj2zPEJA"
-                                class="btn btn-mod btn-w btn-medium btn-round " target="_blank"
-                                style="font-weight: bold; margin-bottom: 20px;">Become a Mentor</a>
-                        </p>
+                                <br><br>
+                                <a href="mailto: info@rotathon.tech" class="btn btn-mod btn-w btn-medium btn-round " style="font-weight: bold; margin-bottom: 20px;">Sponsor Us</a> &nbsp;
+                                <a href="https://forms.gle/TnKAPHte5gj2zPEJA" class="btn btn-mod btn-w btn-medium btn-round " target="_blank" style="font-weight: bold; margin-bottom: 20px;">Become a Mentor</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sponsor and mentor section end -->
+        <!-- Sponsor and mentor section end -->
 
-    <!-- About Section -->
-    <!--             <section class="page-section" style="background-color:honeydew" id="about">
+        <!-- About Section -->
+        <!--             <section class="page-section" style="background-color:honeydew" id="about">
                 <div class="container relative">
                     <BR><BR><bR>
                     <div class="row">
@@ -961,389 +880,382 @@
                       </div>
                                    -->
 
-    <!-- End Text -->
+        <!-- End Text -->
 
-    <!--   </div>
+        <!--   </div>
         </section> -->
-    <section id="verticalgrad" style="background-color: #02021d; ">
-        <div class="page-section" id="time-section" style="margin: auto; padding-top: 50px;">
-            <div class="main-timeline">
-                <div class="sec-head" style="font-family: 'Poppins-Black';">SCHEDULE</div>
-                <div class="timeline">
-                    <div href="#" class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-calendar"></i>
+        <section id="verticalgrad" style="background-color: #02021d; ">
+            <div class="page-section" id="time-section" style="margin: auto; padding-top: 50px;">
+                <div class="main-timeline">
+                    <div class="sec-head" style="font-family: 'Poppins-Black';">SCHEDULE</div>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <h3 class="title" style="color: white;">Registration Phase 1</h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>Ended March 15 2021</strong></span><br> In this phase, the team will be given the Problem Statements for each Track. The teams need to choose their desired track and register for Hackathon or Ideathon
+                            </p>
                         </div>
-                        <h3 class="title" style="color: white;">Registration Phase 1</h3>
-                        <p class="description">
-                            <span style="color: white; display: block;"><strong>January 24, 2021 to February 15,
-                                    2021</strong></span><br> In this phase, the team will be given the Problem
-                            Statements for each Track. The teams need to choose their desired
-                            track and register for Hackathon or Ideathon
-                        </p>
                     </div>
-                </div>
-                <div class="timeline">
-                    <div href="#" class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-rocket"></i>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <h3 class="title" style="color: white;">Registration Phase 2</h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>Ends March 20, 2021 (11:59 PM IST)
+                                    </strong></span><br> By the end of the phase, the teams need to provide a solution to the given problem statement. Each registration will be considered complete after the
+                                submission of PPTs on the shared template
+                            </p>
                         </div>
-                        <h3 class="title" style="color: white;">Registration Phase 2</h3>
-                        <p class="description">
-                            <span style="color: white; display: block;"><strong>February 15, 2021 to March 15, 2021
-                                    (11:59 PM IST)</strong></span><br> By the end of the phase, the teams need to
-                            provide a solution to the given problem statement. Each registration
-                            will be considered complete after the submission of PPTs on the shared template
-                        </p>
                     </div>
-                </div>
-                <div class="timeline">
-                    <div href="#" class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-user"></i>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <h3 class="title" style="color: white;">Screening Round 1 </h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>March 21, 2021 to April 1,
+                                    2021</strong></span><br> During this phase, mentorship sessions for all the teams will be conducted. The Top 30 Teams will be shortlisted.
+                            </p>
                         </div>
-                        <h3 class="title" style="color: white;">Screening Round 1 </h3>
-                        <p class="description">
-                            <span style="color: white; display: block;"><strong>March 4, 2021 to March 20,
-                                    2021</strong></span><br> During this phase, mentorship sessions for all the teams
-                            will be conducted. The Top 30 Teams will be shortlisted.
-                        </p>
                     </div>
-                </div>
-                <div class="timeline">
-                    <div href="#" class="timeline-content">
-                        <div class="timeline-icon" style="color: #619310; ">
-                            <i class="fas fa-bullhorn"></i>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon" style="color: #619310; ">
+                                <i class="fas fa-bullhorn"></i>
 
-                        </div>
-                        <h3 class="title" style="color: white;">Opening Ceremony</h3>
-                        <p class="description">
-                            <span style="color: white; display: block;"><strong>To be Announced</strong></span><br> The
-                            Opening Ceremony will mark the opening of the final stages which will consist of the
-                            selected 30 Teams.
+                            </div>
+                            <h3 class="title" style="color: white;">Opening Ceremony</h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>April 11, 2021</strong></span><br> The Opening Ceremony will mark the opening of the final stages which will consist of the selected 30 Teams.
 
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div href="#" class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-angle-double-right"></i>
+                            </p>
                         </div>
-                        <h3 class="title" style="color: white;">Mentorship and Training</h3>
-                        <p class="description">
-                            <span style="color: white; display: block;"><strong>To be Announced</strong></span><br> The
-                            top 30 teams will receive mentorship and guidance from field experts so that they can refine
-                            their product and
-                            pitch
-                        </p>
                     </div>
-                </div>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-angle-double-right"></i>
+                            </div>
+                            <h3 class="title" style="color: white;">Mentorship and Training</h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>April 12, 2021 to April 24, 2021</strong></span><br> The top 30 teams will receive mentorship and guidance from field experts so that they can refine their product and pitch
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="timeline">
-                    <div href="#" class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-trophy"></i>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-trophy"></i>
+                            </div>
+                            <h3 class="title" style="color: white;">Rotathon Grand Finale</h3>
+                            <p class="description">
+                                <span style="color: white; display: block;"><strong>April 25, 2021</strong></span><br> Final Screening of pitches of Hackathon and Ideathon to declare the ultimate winners of Rotathon!
+                            </p>
                         </div>
-                        <h3 class="title" style="color: white;">Rotathon Grand Finale</h3>
-                        <p class="description">
-                            <span style="color: white; display: block;"><strong>April 2021</strong></span><br> Final
-                            Screening of pitches of Hackathon and Ideathon to declare the ultimate winners of Rotathon!
-                        </p>
                     </div>
-                </div>
 
 
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Gallery Section -->
+        <section class="page-section pt-30 pb-0" style="background-color:rgb(0, 19, 41);">
+            <div class="sec-head" style="font-family: 'Poppins-Black'; margin-bottom: 20px !important;">TRACKS</div>
+            <div style="text-align: center;">
+            <button type="button" onclick="window.open('tracksDetails.html','_blank')" target="_blank" class="btn btn-lg btn-primary bt-hov" style="background-color: #D9375C; border-color: #D9375C; font-family: 'Poppins-Black' margin: auto; margin-bottom: 40px; ">SEE PROBLEM STATEMENTS!</button>
             </div>
         </div>
-    </section>
+            <div class="relative">
 
+                <div class="image-carousel bg-dark">
 
+                    <!-- Image Item 1-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
+                            <div class="team-item">
 
+                                <div class="team-item-image">
 
-    <!-- Gallery Section -->
-    <section class="page-section pt-30 pb-0" style="background-color:rgb(0, 19, 41);">
-        <div class="sec-head" style="font-family: 'Poppins-Black';">TRACKS</div>
-        <div class="relative">
+                                    <img src="Tracks/1.png" alt="" />
 
-            <div class="image-carousel bg-dark">
+                                    <div class="team-item-detail">
 
-                <!-- Image Item 1-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                                        <h1 class="font-alt normal"><strong>TRACK 1</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Financial Literacy</strong>
+                                        </h1>
 
-                        <div class="team-item">
-
-                            <div class="team-item-image">
-
-                                <img src="Tracks/1.png" alt="" />
-
-                                <div class="team-item-detail">
-
-                                    <h1 class="font-alt normal"><strong>TRACK 1</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Financial Literacy</strong>
-                                    </h1>
-
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 2-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 2-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/2.png" alt="" />
+                                    <img src="Tracks/2.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 2</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Women Security</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 2</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Women Security</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 3-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 3-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/3.png" alt="" />
+                                    <img src="Tracks/3.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 3</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Healthcare: Sanitation, Hygiene and Wellness</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 3</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Healthcare: Sanitation, Hygiene and Wellness</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 4-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 4-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/4.png" alt="" />
+                                    <img src="Tracks/4.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 4</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Virtual Learning</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 4</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Virtual Learning</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 5-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 5-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/5.png" alt="" />
+                                    <img src="Tracks/5.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 5</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Climate Change</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 5</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Climate Change</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 6-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 6-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/6.png" alt="" />
+                                    <img src="Tracks/6.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 6</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Empowering the LGBTQIA+</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 6</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Empowering the LGBTQIA+</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 7-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 7-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/7.png" alt="" />
+                                    <img src="Tracks/7.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 7</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Sustainable Development</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 7</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Sustainable Development</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 8-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 8-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/8.png" alt="" />
+                                    <img src="Tracks/8.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 8</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Cybersecurity</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 8</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Cybersecurity</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 9-->
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <!-- End Image Item -->
+                    <!-- Image Item 9-->
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/9.png" alt="" />
+                                    <img src="Tracks/9.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 9</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Empowering the Specially Abled</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 9</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Empowering the Specially Abled</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
 
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/10.png" alt="" />
+                                    <img src="Tracks/10.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 10</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Waste Management</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 10</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Waste Management</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
 
-                <div>
-                    <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
+                    <div>
+                        <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
-                        <div class="team-item">
+                            <div class="team-item">
 
-                            <div class="team-item-image">
+                                <div class="team-item-image">
 
-                                <img src="Tracks/11.png" alt="" />
+                                    <img src="Tracks/11.png" alt="" />
 
-                                <div class="team-item-detail">
+                                    <div class="team-item-detail">
 
-                                    <h1 class="font-alt normal"><strong>TRACK 11</strong></h1>
-                                    <br><br>
-                                    <h1>
-                                        <strong>Advancement in Agriculture</strong>
-                                    </h1>
+                                        <h1 class="font-alt normal"><strong>TRACK 11</strong></h1>
+                                        <br><br>
+                                        <h1>
+                                            <strong>Advancement in Agriculture</strong>
+                                        </h1>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <!-- End Image Item -->
-                <!-- Image Item 10-->
-                <!-- <div>
+                    <!-- End Image Item -->
+                    <!-- Image Item 10-->
+                    <!-- <div>
                         <div class="post-prev-img mb-0 wow" data-wow-delay="0.2s">
 
                             <div class="team-item">
@@ -1366,30 +1278,30 @@
 
                         </div>
                     </div> -->
-                <!-- End Image Item -->
+                    <!-- End Image Item -->
+
+                </div>
 
             </div>
-
-        </div>
-    </section>
-    <!-- End Gallery Section -->
+        </section>
+        <!-- End Gallery Section -->
 
 
 
-    <!--THEMES SECTION-->
-    <!-- <section style="background-color: black;">
+        <!--THEMES SECTION-->
+        <!-- <section style="background-color: black;">
             <section>
                 <div class="row theme-section" id="themes" style="margin-left: 0px; margin-right: 0px; opacity: 1 !important;">
                     <div class="sec-head" style="margin-top: 80px;">THEMES</div> -->
-    <!--           <h2 class="what hint-text theme-heading theme-header" style="font-size: 80px;
+        <!--           <h2 class="what hint-text theme-heading theme-header" style="font-size: 80px;
                 margin-top: 80px;
                 margin-bottom: 70px;
                 font-family: 'Poppins-Black';
                 text-align: center;" >THEMES</span></h2> -->
-    <!-- <img class="vector-background vector-type-1" src="./images/vector/vector_1.png">
+        <!-- <img class="vector-background vector-type-1" src="./images/vector/vector_1.png">
                 <img class="vector-background vector-type-2" src="./images/vector/vector_2.png">
                 <img class="vector-background vector-type-3" src="./images/vector/vector_3.png"> -->
-    <!-- <div class="container-fluid theme-rows">
+        <!-- <div class="container-fluid theme-rows">
 
                         <div class="row theme-list">
                             <div class="col-lg-6 col-12 theme-list-column theme-background-1">
@@ -1400,7 +1312,7 @@
                                     Recreate one of history’s oldest games from around the world. The challenge is to create a user experience which is both informative and engaging as it guides them through the lost games from ancient times.<br><br>
                                 </p>
                             </div> -->
-    <!-- </div>
+        <!-- </div>
                         <div class="row theme-list">
                             <div class="col-lg-6 col-12 theme-list-column theme-background-2">
                                 <h3 class="theme-list-heading theme-type-2">
@@ -1423,7 +1335,7 @@
                             </div>
                         </div> -->
 
-    <!-- <div class="row theme-list">
+        <!-- <div class="row theme-list">
                             <div class="col-lg-6 col-12 theme-list-column theme-background-4">
                                 <h3 class="theme-list-heading theme-type-4">
                                     THEME 4
@@ -1448,176 +1360,131 @@
                 </div>
             </section>
         </section> -->
-    <!--THEMES SECTION END-->
+        <!--THEMES SECTION END-->
 
-    <!-- <section style="background-image:url(tmp-back2.svg); background-size:cover;background-repeat:no-repeat;background-position:top; padding-top: 5%; background-color: #02021d; ">
+        <!-- <section style="background-image:url(tmp-back2.svg); background-size:cover;background-repeat:no-repeat;background-position:top; padding-top: 5%; background-color: #02021d; ">
         </section> -->
-    <section id="darkcolorsgrad" style="background-color: #02021d; padding-top: 150px;">
-        <h1 style="text-align: center;
+        <section id="darkcolorsgrad" style="background-color: #02021d; padding-top: 150px;">
+            <h1 style="text-align: center;
     margin: 0;
     color: white;
     padding: 20px;
     font-family: 'Poppins-Black';
     font-size: 50px;">PRIZES</h1>
-        <div class="wholecon">
-
-
-            <div id="darkcolorsgrad" class="cardCon">
-
-                <div id="prize_card3" class="card credentialing">
-                    <div class="overlay"></div>
-                    <div class="circle">
-
-
-                        <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                        <desc style="z-index: 1; font-size: 5rem; color: black; font-family: 'Poppins-Black';">10</desc>
-                        <defs>
-                            <polygon id="path-1"
-                                points="60.9784821 18.4748913 60.9784821 0.0299638385 0.538377293 0.0299638385 0.538377293 18.4748913">
-                            </polygon>
-                        </defs>
-                        <g id="Group-12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                            transform="translate(27.000000, 21.000000)">
-                            <g id="Group-5">
-                                <g id="Group-3" transform="translate(2.262327, 21.615176)">
-                                    <mask id="mask-2" fill="white">
-                                        <use xlink:href="#path-1"></use>
-                                    </mask>
-                                    <g id="Clip-2"></g>
-                                    <path
-                                        d="M7.17774177,18.4748913 L54.3387782,18.4748913 C57.9910226,18.4748913 60.9789911,15.7266455 60.9789911,12.3681986 L60.9789911,6.13665655 C60.9789911,2.77820965 57.9910226,0.0299638385 54.3387782,0.0299638385 L7.17774177,0.0299638385 C3.52634582,0.0299638385 0.538377293,2.77820965 0.538377293,6.13665655 L0.538377293,12.3681986 C0.538377293,15.7266455 3.52634582,18.4748913 7.17774177,18.4748913"
-                                        id="Fill-1" fill="#59A785" mask="url(#mask-2)"></path>
-                                </g>
-                                <polygon id="Fill-4" fill="#FFFFFF"
-                                    transform="translate(31.785111, 30.877531) rotate(-2.000000) translate(-31.785111, -30.877531) "
-                                    points="62.0618351 55.9613216 7.2111488 60.3692832 1.50838775 5.79374073 56.3582257 1.38577917">
-                                </polygon>
-                                <ellipse id="Oval-3" fill="#25D48A" opacity="0.216243004" cx="30.0584472"
-                                    cy="21.7657707" rx="9.95169733" ry="9.17325562"></ellipse>
-                                <g id="Group-4" transform="translate(16.959615, 6.479082)" fill="#54C796">
-                                    <polygon id="Fill-6"
-                                        points="10.7955395 21.7823628 0.11873799 11.3001058 4.25482787 7.73131106 11.0226557 14.3753897 27.414824 1.77635684e-15 31.3261391 3.77891399">
-                                    </polygon>
-                                </g>
-                                <path
-                                    d="M4.82347935,67.4368303 L61.2182039,67.4368303 C62.3304205,67.4368303 63.2407243,66.5995595 63.2407243,65.5765753 L63.2407243,31.3865871 C63.2407243,30.3636029 62.3304205,29.5263321 61.2182039,29.5263321 L4.82347935,29.5263321 C3.71126278,29.5263321 2.80095891,30.3636029 2.80095891,31.3865871 L2.80095891,65.5765753 C2.80095891,66.5995595 3.71126278,67.4368303 4.82347935,67.4368303"
-                                    id="Fill-8" fill="#59B08B"></path>
-                                <path
-                                    d="M33.3338063,67.4368303 L61.2181191,67.4368303 C62.3303356,67.4368303 63.2406395,66.5995595 63.2406395,65.5765753 L63.2406395,31.3865871 C63.2406395,30.3636029 62.3303356,29.5263321 61.2181191,29.5263321 L33.3338063,29.5263321 C32.2215897,29.5263321 31.3112859,30.3636029 31.3112859,31.3865871 L31.3112859,65.5765753 C31.3112859,66.5995595 32.2215897,67.4368303 33.3338063,67.4368303"
-                                    id="Fill-10" fill="#4FC391"></path>
-                                <path
-                                    d="M29.4284029,33.2640869 C29.4284029,34.2202068 30.2712569,34.9954393 31.3107768,34.9954393 C32.3502968,34.9954393 33.1931508,34.2202068 33.1931508,33.2640869 C33.1931508,32.3079669 32.3502968,31.5327345 31.3107768,31.5327345 C30.2712569,31.5327345 29.4284029,32.3079669 29.4284029,33.2640869"
-                                    id="Fill-15" fill="#FEFEFE"></path>
-                                <path
-                                    d="M8.45417501,71.5549073 L57.5876779,71.5549073 C60.6969637,71.5549073 63.2412334,69.2147627 63.2412334,66.3549328 L63.2412334,66.3549328 C63.2412334,63.4951029 60.6969637,61.1549584 57.5876779,61.1549584 L8.45417501,61.1549584 C5.34488919,61.1549584 2.80061956,63.4951029 2.80061956,66.3549328 L2.80061956,66.3549328 C2.80061956,69.2147627 5.34488919,71.5549073 8.45417501,71.5549073"
-                                    id="Fill-12" fill="#5BD6A2"></path>
-                            </g>
-                        </g>
-                        </svg>
-
-                    </div>
-                    <h1 style="font-family: 'Poppins-Black'; z-index:100; color: black;">TRACKS</h1>
-                </div>
-
-
-
-
-
-
-
-
-
-                <div href="#" class="card cardBg3 wallet">
-                    <div class="overlay-1"></div>
-                    <div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-                <div id="prize_card" href="#" class="card human-resources">
-                    <div class="overlay overlay-9"></div>
-                    <h1
-                        style="font-family: 'Poppins-Black'; font-size: 4rem; margin-bottom: 0; color:black; z-index: 100;">
-                        <i class="fas fa-trophy"></i>
-                    </h1>
-                    <h1
-                        style="font-family: 'Poppins-Black'; font-size: 2rem; margin-bottom: 0; color:black; z-index: 100;">
-                        WORTH</h1>
-                    <h1
-                        style="font-family: 'Poppins-Black'; font-size: 4rem; margin-bottom: 1rem; margin-top: 5px; color:black; z-index: 100;">
-                        500 USD</h1>
-                    <h1 style="text-align: center; font-family: 'Poppins-Black'; color: black; z-index: 100;">PER TRACK
-                    </h1>
-                    </a>
-
-
-
-                </div>
-
-
-                <div>
-                    <h1 class="only-phone"
-                        style="margin: 0; text-align: center;  font-family: 'Poppins-Black'; font-size: 5rem; display: none;">
-                        <i class="fas fa-arrow-circle-up"></i>
-                    </h1>
-                    <h1 style="margin: 0; text-align: center; font-family: 'Ubuntu'; font-size: 5rem;">HACKATHON</h1>
-                </div>
-
-
-
+            <div class="wholecon">
 
 
                 <div id="darkcolorsgrad" class="cardCon">
 
+                    <div id="prize_card3" class="card credentialing">
+                        <div class="overlay"></div>
+                        <div class="circle">
+
+
+                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                            <desc style="z-index: 1; font-size: 5rem; color: black; font-family: 'Poppins-Black';">10</desc>
+                            <defs>
+                                <polygon id="path-1" points="60.9784821 18.4748913 60.9784821 0.0299638385 0.538377293 0.0299638385 0.538377293 18.4748913">
+                                </polygon>
+                            </defs>
+                            <g id="Group-12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(27.000000, 21.000000)">
+                                <g id="Group-5">
+                                    <g id="Group-3" transform="translate(2.262327, 21.615176)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-2"></g>
+                                        <path d="M7.17774177,18.4748913 L54.3387782,18.4748913 C57.9910226,18.4748913 60.9789911,15.7266455 60.9789911,12.3681986 L60.9789911,6.13665655 C60.9789911,2.77820965 57.9910226,0.0299638385 54.3387782,0.0299638385 L7.17774177,0.0299638385 C3.52634582,0.0299638385 0.538377293,2.77820965 0.538377293,6.13665655 L0.538377293,12.3681986 C0.538377293,15.7266455 3.52634582,18.4748913 7.17774177,18.4748913"
+                                            id="Fill-1" fill="#59A785" mask="url(#mask-2)"></path>
+                                    </g>
+                                    <polygon id="Fill-4" fill="#FFFFFF" transform="translate(31.785111, 30.877531) rotate(-2.000000) translate(-31.785111, -30.877531) " points="62.0618351 55.9613216 7.2111488 60.3692832 1.50838775 5.79374073 56.3582257 1.38577917">
+                                    </polygon>
+                                    <ellipse id="Oval-3" fill="#25D48A" opacity="0.216243004" cx="30.0584472" cy="21.7657707" rx="9.95169733" ry="9.17325562"></ellipse>
+                                    <g id="Group-4" transform="translate(16.959615, 6.479082)" fill="#54C796">
+                                        <polygon id="Fill-6" points="10.7955395 21.7823628 0.11873799 11.3001058 4.25482787 7.73131106 11.0226557 14.3753897 27.414824 1.77635684e-15 31.3261391 3.77891399">
+                                        </polygon>
+                                    </g>
+                                    <path d="M4.82347935,67.4368303 L61.2182039,67.4368303 C62.3304205,67.4368303 63.2407243,66.5995595 63.2407243,65.5765753 L63.2407243,31.3865871 C63.2407243,30.3636029 62.3304205,29.5263321 61.2182039,29.5263321 L4.82347935,29.5263321 C3.71126278,29.5263321 2.80095891,30.3636029 2.80095891,31.3865871 L2.80095891,65.5765753 C2.80095891,66.5995595 3.71126278,67.4368303 4.82347935,67.4368303"
+                                        id="Fill-8" fill="#59B08B"></path>
+                                    <path d="M33.3338063,67.4368303 L61.2181191,67.4368303 C62.3303356,67.4368303 63.2406395,66.5995595 63.2406395,65.5765753 L63.2406395,31.3865871 C63.2406395,30.3636029 62.3303356,29.5263321 61.2181191,29.5263321 L33.3338063,29.5263321 C32.2215897,29.5263321 31.3112859,30.3636029 31.3112859,31.3865871 L31.3112859,65.5765753 C31.3112859,66.5995595 32.2215897,67.4368303 33.3338063,67.4368303"
+                                        id="Fill-10" fill="#4FC391"></path>
+                                    <path d="M29.4284029,33.2640869 C29.4284029,34.2202068 30.2712569,34.9954393 31.3107768,34.9954393 C32.3502968,34.9954393 33.1931508,34.2202068 33.1931508,33.2640869 C33.1931508,32.3079669 32.3502968,31.5327345 31.3107768,31.5327345 C30.2712569,31.5327345 29.4284029,32.3079669 29.4284029,33.2640869"
+                                        id="Fill-15" fill="#FEFEFE"></path>
+                                    <path d="M8.45417501,71.5549073 L57.5876779,71.5549073 C60.6969637,71.5549073 63.2412334,69.2147627 63.2412334,66.3549328 L63.2412334,66.3549328 C63.2412334,63.4951029 60.6969637,61.1549584 57.5876779,61.1549584 L8.45417501,61.1549584 C5.34488919,61.1549584 2.80061956,63.4951029 2.80061956,66.3549328 L2.80061956,66.3549328 C2.80061956,69.2147627 5.34488919,71.5549073 8.45417501,71.5549073"
+                                        id="Fill-12" fill="#5BD6A2"></path>
+                                </g>
+                            </g>
+                            </svg>
+
+                        </div>
+                        <h1 style="font-family: 'Poppins-Black'; z-index:100; color: black;">TRACKS</h1>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div href="#" class="card cardBg3 wallet">
+                        <div class="overlay-1"></div>
+                        <div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div id="prize_card" href="#" class="card human-resources">
+                        <div class="overlay overlay-9"></div>
+                        <h1 style="font-family: 'Poppins-Black'; font-size: 4rem; margin-bottom: 0; color:black; z-index: 100;">
+                            <i class="fas fa-trophy"></i>
+                        </h1>
+                        <h1 style="font-family: 'Poppins-Black'; font-size: 2rem; margin-bottom: 0; color:black; z-index: 100;">
+                            WORTH</h1>
+                        <h1 style="font-family: 'Poppins-Black'; font-size: 4rem; margin-bottom: 1rem; margin-top: 5px; color:black; z-index: 100;">
+                            500 USD</h1>
+                        <h1 style="text-align: center; font-family: 'Poppins-Black'; color: black; z-index: 100;">PER TRACK
+                        </h1>
+                        </a>
+
+
+
+                    </div>
 
 
                     <div>
-                        <h1 style="margin: 0; text-align: center; ; font-family: 'Ubuntu'; font-size: 5rem;">IDEATHON
+                        <h1 class="only-phone" style="margin: 0; text-align: center;  font-family: 'Poppins-Black'; font-size: 5rem; display: none;">
+                            <i class="fas fa-arrow-circle-up"></i>
                         </h1>
-                        <h1 class="only-phone"
-                            style="margin: 0; text-align: center;  font-family: 'Poppins-Black'; font-size: 5rem;"><i
-                                class="fas fa-arrow-circle-down"></i></h1>
-                    </div>
-
-                    <a href="#" class="card cardBg credentialing">
-                        <div class="overlay-1">
-                        </div>
-                    </a>
-
-
-
-
-
-
-
-
-
-                    <div id="prize_card2" href="#" class="card wallet">
-                        <div class="overlay overlay-9"></div>
-                        <h1
-                            style="font-family: 'Poppins-Black'; font-size: 5rem; margin-bottom: 0; color:black; z-index: 100;">
-                            <i class="fas fa-trophy"></i>
-                        </h1>
-                        <h1
-                            style="font-family: 'Poppins-Black'; font-size: 2rem; margin-bottom: 0; color:black; z-index: 100;">
-                            WORTH</h1>
-                        <h1
-                            style="font-family: 'Poppins-Black'; font-size: 4rem; margin-bottom: 1rem; margin-top: 5px; color:black; z-index: 100;">
-                            1000 USD</h1>
+                        <h1 style="margin: 0; text-align: center; font-family: 'Ubuntu'; font-size: 5rem;">HACKATHON</h1>
                     </div>
 
 
-                    <a href="#" class="card cardBg2 credentialing">
-                        <div class="overlay-1">
+
+
+
+                    <div id="darkcolorsgrad" class="cardCon">
+
+
+
+                        <div>
+                            <h1 style="margin: 0; text-align: center; ; font-family: 'Ubuntu'; font-size: 5rem;">IDEATHON
+                            </h1>
+                            <h1 class="only-phone" style="margin: 0; text-align: center;  font-family: 'Poppins-Black'; font-size: 5rem;"><i class="fas fa-arrow-circle-down"></i></h1>
                         </div>
-                    </a>
+
+                        <a href="#" class="card cardBg credentialing">
+                            <div class="overlay-1">
+                            </div>
+                        </a>
 
 
 
@@ -1625,18 +1492,43 @@
 
 
 
-                    <!-- <a href="#" class="card  human-resources">
+
+
+                        <div id="prize_card2" href="#" class="card wallet">
+                            <div class="overlay overlay-9"></div>
+                            <h1 style="font-family: 'Poppins-Black'; font-size: 5rem; margin-bottom: 0; color:black; z-index: 100;">
+                                <i class="fas fa-trophy"></i>
+                            </h1>
+                            <h1 style="font-family: 'Poppins-Black'; font-size: 2rem; margin-bottom: 0; color:black; z-index: 100;">
+                                WORTH</h1>
+                            <h1 style="font-family: 'Poppins-Black'; font-size: 4rem; margin-bottom: 1rem; margin-top: 5px; color:black; z-index: 100;">
+                                1000 USD</h1>
+                        </div>
+
+
+                        <a href="#" class="card cardBg2 credentialing">
+                            <div class="overlay-1">
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!-- <a href="#" class="card  human-resources">
   <div>
 </div> -->
-    </section>
+        </section>
 
 
-    <section id="darkcolorsgrad" style="background-color: #02021d; padding-top: 150px;">
-        <div class="container relative">
-            <div class="row equal" id="id4">
+        <section id="darkcolorsgrad" style="background-color: #02021d; padding-top: 150px;">
+            <div class="container relative">
+                <div class="row equal" id="id4">
 
-                <div class="col-xs-12" style="margin: auto; padding-bottom: 50px;">
-                    <h1 id="spons-head" style="text-align: center;
+                    <div class="col-xs-12" style="margin: auto; padding-bottom: 50px;">
+                        <h1 id="spons-head" style="text-align: center;
                             margin: 0;
                             color: white;
                             padding: 20px;
@@ -1656,13 +1548,13 @@
                         </div>
 
 
-                        
+
                     </div>
 
-    
 
 
-                    
+
+
 
                 </div>
             </div>
@@ -1676,7 +1568,7 @@
                 <div class="row equal" id="id4">
 
                     <div class="col-xs-12" style="margin: auto; padding-bottom: 50px;">
-                        <h1 id = "spons-head" style="text-align: center;
+                        <h1 id="spons-head" style="text-align: center;
                             margin: 0;
                             color: white;
                             padding: 20px;
@@ -1692,345 +1584,339 @@
                         <div class="pb-20" style="margin: auto; text-align: center;">
                             <a href="https://www.zee.com"><img src="Sponsors/7.jpg" style="height: 200px;"></a>
                         </div>
-                        
+
                     </div>
 
-                <div class="col-md-6" style="margin: auto; margin-bottom: 80px;">
-                    <div style="margin: auto; text-align: center;">
-                        <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Track Sponsor</h3>
+                    <div class="col-md-6" style="margin: auto; margin-bottom: 80px;">
+                        <div style="margin: auto; text-align: center;">
+                            <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Track Sponsor</h3>
+                        </div>
+                        <div class="pb-20" style="margin: auto; text-align: center;">
+                            <a href="https://www.linkedin.com/company/avniecosolutions/"><img src="Sponsors/8.jpeg" style="height: 80px;"></a>
+                        </div>
+
                     </div>
-                    <div class="pb-20" style="margin: auto; text-align: center;">
-                        <a href="https://www.linkedin.com/company/avniecosolutions/"><img src="Sponsors/8.jpeg"
-                                style="height: 80px;"></a>
+
+                    <div class="col-md-6" style="margin: auto; margin-bottom: 80px;">
+                        <div style="margin: auto; text-align: center;">
+                            <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Track Sponsor</h3>
+                        </div>
+                        <div class="pb-20" style="margin: auto; text-align: center;">
+                            <a href="https://iserveu.in"><img src="Sponsors/9.jpeg" style="height: 80px;"></a>
+                        </div>
+
                     </div>
+
+
+                    <div class="col-md-4" style="margin: auto; margin-bottom: 80px;">
+                        <div style="margin: auto; text-align: center;">
+                            <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Security Partner</h3>
+                        </div>
+                        <div class="pb-20" style="margin: auto; text-align: center;">
+                            <a href="https://1password.com"><img src="Sponsors/1.png" style="height: 80px;"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4" style="margin: auto; margin-bottom: 80px;">
+                        <div style="margin: auto; text-align: center;">
+                            <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Research Partner</h3>
+                        </div>
+                        <div class="pb-20" style="margin: auto; text-align: center;">
+                            <a href="https://www.wolfram.com/language/"><img src="Sponsors/2.png" style="height: 80px;"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4" style="margin: auto; margin-bottom: 80px;">
+                        <div style="margin: auto; text-align: center;">
+                            <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Education Partner</h3>
+                        </div>
+                        <div class="pb-20" style="margin: auto; text-align: center;">
+                            <a href="https://www.geeksforgeeks.org"><img src="Sponsors/11.png" style="height: 80px;"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12" style="margin: auto; margin-bottom: 20px;">
+                        <div style="margin: auto; text-align: center;">
+                            <h3 style="font-family: 'Poppins-SemiBold'; font-weight: bold; text-transform: uppercase;">Other Sponsors
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4" style="margin: auto;">
+                        <div class="pb-50" style="margin: auto; text-align: center;">
+                            <a href="https://repl.it"><img src="Sponsors/3.png" style="height: 80px;"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4" style="margin: auto;">
+                        <div class="pb-50" style="margin: auto; text-align: center;">
+                            <a href="https://www.sashido.io/en/"><img src="Sponsors/4.png" style="height: 80px;"></a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4" style="margin: auto;">
+                        <div class="pb-50" style="margin: auto; text-align: center;">
+                            <a href="https://www.framer.com"><img src="Sponsors/6.png" style="height: 80px;"></a>
+                        </div>
+
+                    </div>
+
+
+
 
                 </div>
-
-                <div class="col-md-6" style="margin: auto; margin-bottom: 80px;">
-                    <div style="margin: auto; text-align: center;">
-                        <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Track Sponsor</h3>
-                    </div>
-                    <div class="pb-20" style="margin: auto; text-align: center;">
-                        <a href="https://iserveu.in"><img src="Sponsors/9.jpeg" style="height: 80px;"></a>
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4" style="margin: auto; margin-bottom: 80px;">
-                    <div style="margin: auto; text-align: center;">
-                        <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Security Partner</h3>
-                    </div>
-                    <div class="pb-20" style="margin: auto; text-align: center;">
-                        <a href="https://1password.com"><img src="Sponsors/1.png" style="height: 80px;"></a>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4" style="margin: auto; margin-bottom: 80px;">
-                    <div style="margin: auto; text-align: center;">
-                        <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Research Partner</h3>
-                    </div>
-                    <div class="pb-20" style="margin: auto; text-align: center;">
-                        <a href="https://www.wolfram.com/language/"><img src="Sponsors/2.png" style="height: 80px;"></a>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4" style="margin: auto; margin-bottom: 80px;">
-                    <div style="margin: auto; text-align: center;">
-                        <h3 style="font-family: 'Poppins-Regular'; text-transform: uppercase;">Education Partner</h3>
-                    </div>
-                    <div class="pb-20" style="margin: auto; text-align: center;">
-                        <a href="https://www.geeksforgeeks.org"><img src="Sponsors/11.png" style="height: 80px;"></a>
-                    </div>
-
-                </div>
-
-                <div class="col-md-12" style="margin: auto; margin-bottom: 20px;">
-                    <div style="margin: auto; text-align: center;">
-                        <h3 style="font-family: 'Poppins-SemiBold'; font-weight: bold; text-transform: uppercase;">Other
-                            Sponsors</h3>
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4" style="margin: auto;">
-                    <div class="pb-50" style="margin: auto; text-align: center;">
-                        <a href="https://repl.it"><img src="Sponsors/3.png" style="height: 80px;"></a>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4" style="margin: auto;">
-                    <div class="pb-50" style="margin: auto; text-align: center;">
-                        <a href="https://www.sashido.io/en/"><img src="Sponsors/4.png" style="height: 80px;"></a>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-4" style="margin: auto;">
-                    <div class="pb-50" style="margin: auto; text-align: center;">
-                        <a href="https://www.framer.com"><img src="Sponsors/6.png" style="height: 80px;"></a>
-                    </div>
-
-                </div>
-
-
-
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="darkcolorsgrad" class="page-section bg-gray-lighter footer pb-40">
-        <div class="container">
+        <!-- Footer -->
+        <footer id="darkcolorsgrad" class="page-section bg-gray-lighter footer pb-40">
+            <div class="container">
 
-            <!-- Footer Logo -->
-            <br>
-            <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-                <a href="#top"><img src="ROTATHON-new.png" width="400" height="250" alt="" /></a>&nbsp;
-            </div>
-            <div class="local-scroll mb-30 wow fadeInDown " data-wow-duration="1.2s">
-                <div class="image-responsive">
-                    <a href="#top"><img src="Club_Logos/3.png" width="1200" height="100" alt="" align="center" /></a>
-                    <!--                        <a href="#top"><img src="Club_Logos/5.png" width="200" height="100" alt="" align="center" /></a>
+                <!-- Footer Logo -->
+                <br>
+                <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+                    <a href="#top"><img src="ROTATHON-new.png" width="400" height="250" alt="" /></a>&nbsp;
+                </div>
+                <div class="local-scroll mb-30 wow fadeInDown " data-wow-duration="1.2s">
+                    <div class="image-responsive">
+                        <a href="#top"><img src="Club_Logos/3.png" width="1200" height="100" alt="" align="center" /></a>
+                        <!--                        <a href="#top"><img src="Club_Logos/5.png" width="200" height="100" alt="" align="center" /></a>
                         <a href="#top"><img src="images/2.png" width="200" height="100" alt="" align="center" /></a>
                         <a href="#top"><img src="images/logo1.png" width="150" height="75" alt="" align="center" /></a>
 
                         <a href="#top"><img src="images/logo3.png" width="100" height="100" alt="" align="center" /></a> -->
+                    </div>
                 </div>
-            </div>
-            <br><br><br>
-            <!-- End Footer Logo -->
-            <!-- Social Links -->
-            <div class="footer-social-links mb-110 mb-xs-40">
-                <a href="https://www.facebook.com/Rotathon21-103604988297897/" title="Facebook" target="_blank"><i
+                <br><br><br>
+                <!-- End Footer Logo -->
+                <!-- Social Links -->
+                <div class="footer-social-links mb-110 mb-xs-40">
+                    <a href="https://www.facebook.com/Rotathon21-103604988297897/" title="Facebook" target="_blank"><i
                         class="fab fa-facebook"></i></a>
-                <!-- <a href="https://twitter.com/rotaractdtu?lang=en" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a> -->
-                <a href="https://discord.gg/bbWkHFPP" title="discord" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://instagram.com/rotathon?igshid=1ndu0f8p9bte" title="Instagarm" target="_blank"><i
+                    <!-- <a href="https://twitter.com/rotaractdtu?lang=en" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a> -->
+                    <a href="https://discord.gg/bbWkHFPP" title="discord" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://instagram.com/rotathon?igshid=1ndu0f8p9bte" title="Instagarm" target="_blank"><i
                         class="fab fa-instagram"></i></a>
-                <a href="mailto:info@rotathon.tech" title="Mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.youtube.com/watch?v=NCfeQEFGjJ4" title="youtube" target="_blank"><i
+                    <a href="mailto:info@rotathon.tech" title="Mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.youtube.com/watch?v=NCfeQEFGjJ4" title="youtube" target="_blank"><i
                         class="fab fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/company/rotathon/" title="Linkedin" target="_blank"><i
+                    <a href="https://www.linkedin.com/company/rotathon/" title="Linkedin" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
-                <a href="https://rotathon3011.devpost.com/" title="devpost" target="_blank"><img src="dp.svg"
-                        class="dpost" width="15px" height="15px"></a>
+                    <a href="https://rotathon3011.devpost.com/" title="devpost" target="_blank"><img src="dp.svg" class="dpost" width="15px" height="15px"></a>
 
-            </div>
-            <!-- End Social Links -->
+                </div>
+                <!-- End Social Links -->
 
-            <!-- Footer Text -->
-            <div class="footer-text">
+                <!-- Footer Text -->
+                <div class="footer-text">
 
-                <!-- Copyright -->
-                <!--
+                    <!-- Copyright -->
+                    <!--
                         <div class="footer-copy font-alt">
                             <a href="https://rotaractdtu.wordpress.com" target="_blank">&copy;Rotaract DTU</a>.
                         </div>
                         -->
-                <!-- End Copyright -->
+                    <!-- End Copyright -->
 
-                <div class="footer-made">
-                    Made with <span style="color: #e25555;">&hearts;</span> by Rotaract Club , Delhi Technological
-                    University
+                    <div class="footer-made">
+                        Made with <span style="color: #e25555;">&hearts;</span> by Rotaract Club , Delhi Technological University
+                    </div>
+
                 </div>
-
+                <!-- End Footer Text -->
             </div>
-            <!-- End Footer Text -->
-        </div>
-    </footer>
-    <!-- End Page Wrap -->
+        </footer>
+        <!-- End Page Wrap -->
 
 
-    <!-- JS -->
+        <!-- JS -->
 
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
-    <script type="text/javascript" src="js/gmap3.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-    <script type="text/javascript" src="js/all.js"></script>
-    <script type="text/javascript" src="js/contact-reservations-form.js"></script>
-    <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
-    <script type="text/javascript" src="js/jquery.backgroundvideo.min.js"></script>
-    <script type="text/javascript" src="js/jquery.downCount.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+        <script type="text/javascript" src="js/gmap3.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/contact-reservations-form.js"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+        <script type="text/javascript" src="js/jquery.backgroundvideo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.downCount.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 
 
-    <script src="js/timer.js"></script>
+        <script src="js/timer.js"></script>
 
-    <!-- Timer end -->
+        <!-- Timer end -->
 
-    <script src="js/moment.min.js"></script>
-    <script src="js/moment-timezone.min.js"></script>
-    <script src="js/moment-timezone-with-data.min.js"></script>
-    <script src="js/countdowntime.js"></script>
-    <script>
-        $('.cd100').countdown100({
+        <script src="js/moment.min.js"></script>
+        <script src="js/moment-timezone.min.js"></script>
+        <script src="js/moment-timezone-with-data.min.js"></script>
+        <script src="js/countdowntime.js"></script>
+        <script>
+            $('.cd100').countdown100({
 
-            endtimeYear: 0,
-            endtimeMonth: 0,
-            endtimeDate: 35,
-            endtimeHours: 19,
-            endtimeMinutes: 0,
-            endtimeSeconds: 0,
-            timeZone: ""
+                endtimeYear: 0,
+                endtimeMonth: 0,
+                endtimeDate: 35,
+                endtimeHours: 19,
+                endtimeMinutes: 0,
+                endtimeSeconds: 0,
+                timeZone: ""
 
-        });
-    </script>
-    <script type="text/javascript">
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            backSpeed: 100,
-            typeSpeed: 100,
-            showCursor: false,
-            smartBackspace: true
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- stats.js lib -->
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script type="text/javascript">
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 80,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
+            });
+        </script>
+        <script type="text/javascript">
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                backSpeed: 100,
+                typeSpeed: 100,
+                showCursor: false,
+                smartBackspace: true
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- stats.js lib -->
+        <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script type="text/javascript">
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
                         }
                     },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
+                    "color": {
+                        "value": "#ffffff"
                     },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
                     },
-                    "push": {
-                        "particles_nb": 4
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
                     },
-                    "remove": {
-                        "particles_nb": 2
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
                     }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
-    <!--script src="assets/js/bootstrap.js" type="text/javascript"></script>
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        </script>
+        <!--script src="assets/js/bootstrap.js" type="text/javascript"></script>
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
 </body>
